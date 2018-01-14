@@ -1,8 +1,16 @@
 {
-    "name": "legendary",
+    "name": "legendary-helper",
     "version": "0.0.0",
     "license": "MIT",
     "scripts": {
+      "test.e": "cd services\\edition\\edition.tests.unit && dotnet test && cd ..\\edition.tests.integration && dotnet test",
+      "test.s": "cd services\\scheme\\scheme.tests.unit && dotnet test && cd ..\\scheme.tests.integration && dotnet test",
+      "test.m": "cd services\\mastermind\\mastermind.tests.unit && dotnet test && cd ..\\mastermind.tests.integration && dotnet test",
+      "test.v": "cd services\\villain\\villain.tests.unit && dotnet test && cd ..\\villain.tests.integration && dotnet test",
+      "test.hm": "cd services\\henchman\\henchman.tests.unit && dotnet test && cd ..\\henchman.tests.integration && dotnet test",
+      "test.vd": "cd services\\villaindeck\\villaindeck.tests.unit && dotnet test && cd ..\\villaindeck.tests.integration && dotnet test",
+      "test.h": "cd services\\hero\\hero.tests.unit && dotnet test && cd ..\\hero.tests.integration && dotnet test",
+      "test.hd": "cd services\\herodeck\\herodeck.tests.unit && dotnet test && cd ..\\herodeck.tests.integration && dotnet test",
       "ng-start": "cd Angular && ng serve",
       "ng-build": "cd Angular && ng build",
       "ng-build.prod": "cd Angular && ng build --prod && xcopy .\\dist\\*.* .\\..\\Gateway\\Gateway\\wwwroot /i /y",

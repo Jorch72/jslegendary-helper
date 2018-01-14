@@ -517,7 +517,7 @@
 	},
 	{ // Mole Man
 		"name": "Mole Man",
-		"edition": "X-Men",
+		"edition": "Fantastic 4",
 		"rules": [
 			{
 				"deck": "Villain",
@@ -559,7 +559,7 @@
 	},
 	{ // Galactus
 		"name": "Galactus",
-		"edition": "X-Men",
+		"edition": "Fantastic 4",
 		"rules": [
 			{
 				"deck": "Villain",

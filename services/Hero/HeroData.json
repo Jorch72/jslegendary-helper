@@ -592,5 +592,35 @@
         "edition": "Secret Wars Volume 2",
         "teams": [ "Cabal" ],
         "classes": [ "Instinct","Strength","Tech" ]
+    },
+    { // Mr. Fantastic
+        "name": "Mr. Fantastic",
+        "edition": "Fantastic 4",
+        "teams": [ "Fantastic 4" ],
+        "classes": [ "Tech", "Instinct" ]
+    },
+    { // Invisible Woman
+        "name": "Invisible Woman",
+        "edition": "Fantastic 4",
+        "teams": [ "Fantastic 4" ],
+        "classes": [ "Covert", "Ranged" ]
+    },
+    { // Human Torch
+        "name": "Human Torch",
+        "edition": "Fantastic 4",
+        "teams": [ "Fantastic 4" ],
+        "classes": [ "Instinct", "Ranged" ]
+    },
+    { // Thing
+        "name": "Thing",
+        "edition": "Fantastic 4",
+        "teams": [ "Fantastic 4" ],
+        "classes": [ "Strength", "Instinct" ]
+    },
+    { // Silver Surfer
+        "name": "Silver Surfer",
+        "edition": "Fantastic 4",
+        "teams": [ "None" ],
+        "classes": [ "Ranged", "Covert", "Strength" ]
     }
 ]
