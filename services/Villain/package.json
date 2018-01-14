@@ -4,7 +4,7 @@
     "license": "MIT",
     "scripts": {
       "start": "cd Villain && dotnet run",
-      "push": "cd Villain && dotnet publish && cf push",
+      "push": "cd Villain && dotnet publish && cf push -b https://github.com/cloudfoundry/dotnet-core-buildpack.git",
       "test": "cd Villain.Tests.Unit && dotnet test && cd ..\\Villain.Tests.Integration && dotnet test"
     }
 }

@@ -4,7 +4,7 @@
     "license": "MIT",
     "scripts": {
       "start": "cd HeroDeck && dotnet run",
-      "push": "cd HeroDeck && dotnet publish && cf push",
+      "push": "cd HeroDeck && dotnet publish && cf push -b https://github.com/cloudfoundry/dotnet-core-buildpack.git",
       "restore": "cd HeroDeck && dotnet restore",
       "test": "cd HeroDeck.Tests.Unit && dotnet test && cd ..\\HeroDeck.Tests.Integration && dotnet test"
     }

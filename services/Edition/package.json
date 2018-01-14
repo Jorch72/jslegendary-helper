@@ -4,7 +4,7 @@
     "license": "MIT",
     "scripts": {
       "start": "cd Edition && dotnet run",
-      "push": "cd Edition && dotnet publish && cf push",
+      "push": "cd Edition && dotnet publish && cf push -b https://github.com/cloudfoundry/dotnet-core-buildpack.git",
       "test": "cd Edition.Tests.Unit && dotnet test && cd ..\\Edition.Tests.Integration && dotnet test"
     }
 }

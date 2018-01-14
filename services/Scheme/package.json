@@ -4,7 +4,7 @@
     "license": "MIT",
     "scripts": {
       "start": "cd Scheme && dotnet run",
-      "push": "cd Scheme && dotnet publish && cf push",
+      "push": "cd Scheme && dotnet publish && cf push -b https://github.com/cloudfoundry/dotnet-core-buildpack.git",
       "restore": "cd Scheme && dotnet restore",
       "test": "cd Scheme.Tests.Unit && dotnet test && cd ..\\Scheme.Tests.Integration && dotnet test"
     }

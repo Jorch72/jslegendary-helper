@@ -4,7 +4,7 @@
     "license": "MIT",
     "scripts": {
       "start": "cd Mastermind && dotnet run",
-      "push": "cd Mastermind && dotnet publish && cf push",
+      "push": "cd Mastermind && dotnet publish && cf push -b https://github.com/cloudfoundry/dotnet-core-buildpack.git",
       "test": "cd Mastermind.Tests.Unit && dotnet test && cd ..\\Mastermind.Tests.Integration && dotnet test"
     }
 }

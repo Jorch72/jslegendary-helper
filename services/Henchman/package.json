@@ -4,7 +4,7 @@
     "license": "MIT",
     "scripts": {
       "start": "cd Henchman && dotnet run",
-      "push": "cd Henchman && dotnet publish && cf push",
+      "push": "cd Henchman && dotnet publish && cf push -b https://github.com/cloudfoundry/dotnet-core-buildpack.git",
       "test": "cd Henchman.Tests.Unit && dotnet test && cd ..\\Henchman.Tests.Integration && dotnet test"
     }
 }
