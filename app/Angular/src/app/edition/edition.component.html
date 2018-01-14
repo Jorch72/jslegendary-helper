@@ -1,13 +1,13 @@
-<mat-card class="box-container">
+<mat-card class="card-container">
 
   <h2>Editions</h2>
 
-  <div *ngFor="let edition of editions">
-    <mat-checkbox [(ngModel)]="edition.checked">{{edition.name}}</mat-checkbox>
+  <div *ngFor="let edition of svc.editions">
+    <mat-checkbox class="box" [(ngModel)]="edition.checked">{{edition.name}}</mat-checkbox>
   </div>
 
   <div class="button-row">
-    <button mat-raised-button color="basic">Back</button>
+    <button mat-raised-button color="basic" [routerLink]="['/player']">Back</button>
     <button mat-raised-button color="primary">Next</button>
   </div>
 

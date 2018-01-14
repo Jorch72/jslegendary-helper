@@ -6,9 +6,11 @@ import { Observable } from 'rxjs/Observable';
 
 @Injectable()
 export class EditionService {
-  editions: Observable<EditionModel[]>;
+  editions: EditionModel[] = [];
 
   constructor(private http: HttpClient) {
-    this.editions = this.http.get<EditionModel[]>('/api/Edition');
+    this.http.get<EditionModel[]>('/api/Edition').subscribe(data => {
+      this.editions = data;
+    });
   }
 }

@@ -1,3 +1,17 @@
-<p>
-  player works!
-</p>
+<mat-card class="card-container">
+  <h2>Players</h2>
+
+  <mat-form-field>
+
+    <mat-select class="select" [(value)]="svc.players">
+      <mat-option *ngFor="let player of totalPlayers" [value]="player">{{ player }}</mat-option>
+    </mat-select>
+
+  </mat-form-field>
+
+  <div class="button-row">
+    <button mat-raised-button color="basic">Back</button>
+    <button mat-raised-button color="primary" [routerLink]="['/edition']">Next</button>
+  </div>
+
+</mat-card>
