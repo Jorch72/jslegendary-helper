@@ -24,6 +24,10 @@ namespace Gateway
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddSingleton<EditionHttpClient, EditionHttpClient>();
+            services.AddTransient<IEditionDAO, EditionDAO>();
+            services.AddTransient<IEditionBLC, EditionBLC>();
+            
             services.AddSingleton<VillainDeckHttpClient, VillainDeckHttpClient>();
             services.AddTransient<IVillainDeckDAO, VillainDeckDAO>();
             services.AddTransient<IVillainDeckBLC, VillainDeckBLC>();
