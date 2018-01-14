@@ -7,7 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { CustomMaterialModule } from './custom-material/custom-material.module';
 
 import { AppComponent } from './app.component';
-import { PlayersComponent } from './players/players.component';
+import { PlayerComponent } from './player/player.component';
 import { EditionComponent } from './edition/edition.component';
 import { VillainComponent } from './villain/villain.component';
 
@@ -17,7 +17,7 @@ import { EditionService } from './services/edition.service';
 @NgModule({
   declarations: [
     AppComponent,
-    PlayersComponent,
+    PlayerComponent,
     VillainComponent,
     EditionComponent
   ],
