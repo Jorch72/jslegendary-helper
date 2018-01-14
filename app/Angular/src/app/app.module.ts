@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 
+import { CustomMaterialModule } from './custom-material/custom-material.module';
+
 import { AppComponent } from './app.component';
 import { VillainComponent } from './villain/villain.component';
 
@@ -14,7 +16,8 @@ import { VillainComponent } from './villain/villain.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CustomMaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
