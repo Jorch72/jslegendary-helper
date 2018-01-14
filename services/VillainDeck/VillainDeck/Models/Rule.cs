@@ -9,10 +9,10 @@ namespace VillainDeck
         public int? Players { get; set; }
         public int? Wounds { get; set; }
         public int? Twists { get; set; }
+        public int? Heroes { get; set; }
         public int? Bystanders { get; set; }
         internal int? Henchmen { get; set; }
         internal int? Villains { get; set; }
         internal int? Masterminds { get; set; }
-        internal int? Heroes { get; set; }
     }
 }
