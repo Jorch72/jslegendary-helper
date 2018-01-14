@@ -1,0 +1,10 @@
+{
+    "name": "filter",
+    "version": "0.0.0",
+    "license": "MIT",
+    "scripts": {
+      "start": "cd Filter && dotnet run",
+      "push": "cd Filter && dotnet publish && cf push -b https://github.com/cloudfoundry/dotnet-core-buildpack.git",
+      "test": "cd Filter.Tests.Unit && dotnet test && cd ..\\Filter.Tests.Integration && dotnet test"
+    }
+}

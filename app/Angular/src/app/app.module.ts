@@ -14,6 +14,7 @@ import { VillainComponent } from './villain/villain.component';
 
 import { PlayerService } from './services/player.service';
 import { EditionService } from './services/edition.service';
+import { VillainService } from './services/villain.service';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { EditionService } from './services/edition.service';
   ],
   providers: [
     PlayerService,
-    EditionService
+    EditionService,
+    VillainService
   ],
   bootstrap: [AppComponent]
 })
