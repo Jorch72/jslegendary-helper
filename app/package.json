@@ -1,0 +1,13 @@
+{
+    "name": "legendary-helper-app",
+    "version": "0.0.0",
+    "license": "MIT",
+    "scripts": {
+        "ng-start": "cd Angular && ng serve",
+        "ng-build": "cd Angular && ng build",
+        "ng-build.prod": "cd Angular && ng build --prod && xcopy .\\dist\\*.* .\\..\\Gateway\\Gateway\\wwwroot /i /y",
+        "ng-test": "cd Angular && ng test",
+        "ng-lint": "cd Angular && ng lint",
+        "ng-e2e": "cd Angular && ng e2e"
+    }
+}

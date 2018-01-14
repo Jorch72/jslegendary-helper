@@ -10,12 +10,6 @@
       "test.hm": "cd services\\henchman\\henchman.tests.unit && dotnet test && cd ..\\henchman.tests.integration && dotnet test",
       "test.vd": "cd services\\villaindeck\\villaindeck.tests.unit && dotnet test && cd ..\\villaindeck.tests.integration && dotnet test",
       "test.h": "cd services\\hero\\hero.tests.unit && dotnet test && cd ..\\hero.tests.integration && dotnet test",
-      "test.hd": "cd services\\herodeck\\herodeck.tests.unit && dotnet test && cd ..\\herodeck.tests.integration && dotnet test",
-      "ng-start": "cd Angular && ng serve",
-      "ng-build": "cd Angular && ng build",
-      "ng-build.prod": "cd Angular && ng build --prod && xcopy .\\dist\\*.* .\\..\\Gateway\\Gateway\\wwwroot /i /y",
-      "ng-test": "cd Angular && ng test",
-      "ng-lint": "cd Angular && ng lint",
-      "ng-e2e": "cd Angular && ng e2e"
+      "test.hd": "cd services\\herodeck\\herodeck.tests.unit && dotnet test && cd ..\\herodeck.tests.integration && dotnet test"
     }
 }
