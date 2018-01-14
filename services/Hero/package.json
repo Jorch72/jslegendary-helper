@@ -1,0 +1,10 @@
+{
+    "name": "hero",
+    "version": "0.0.0",
+    "license": "MIT",
+    "scripts": {
+      "start": "cd Hero && dotnet run",
+      "push": "cd Hero && dotnet publish && cf push",
+      "test": "cd Hero.Tests.Unit && dotnet test && cd ..\\Hero.Tests.Integration && dotnet test"
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "name": "hero-deck",
+    "version": "0.0.0",
+    "license": "MIT",
+    "scripts": {
+      "start": "cd HeroDeck && dotnet run",
+      "push": "cd HeroDeck && dotnet publish && cf push",
+      "restore": "cd HeroDeck && dotnet restore",
+      "test": "cd HeroDeck.Tests.Unit && dotnet test && cd ..\\HeroDeck.Tests.Integration && dotnet test"
+    }
+}

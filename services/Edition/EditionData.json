@@ -1,0 +1,50 @@
+[
+    { 
+        "id": 1,
+        "name": "Core"
+    },
+    {
+        "id": 2,
+        "name": "Paint the Town Red"
+    },
+    {
+        "id": 3,
+        "name": "Dark City"
+    },
+    {
+        "id": 4,
+        "name": "Secret Wars Volume 1"
+    },
+    {
+        "id": 5,
+        "name": "Secret Wars Volume 2"
+    },
+    { 
+        "id": 6,
+        "name": "Civil War"
+    },
+    {
+        "id": 7,        
+        "name": "Captain America, 75th Anniversary"
+    },
+    { 
+        "id": 8,
+        "name": "Deadpool"
+    },
+    { 
+        "id": 9,
+        "name": "Fantastic Four"
+    },
+    { 
+        "id": 10,
+        "name": "Guardians of the Galaxy"
+    },
+    {
+        "id": 11,
+        "name": "X-Men"
+    },
+    {
+        "id": 12,
+        "name": "Fantastic 4"
+    }
+]

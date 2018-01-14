@@ -1,0 +1,1833 @@
+[
+    { // The Legacy Virus
+        "name": "The Legacy Virus",
+        "edition": "Core",
+        "rules": [
+            {
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 2,
+				"wounds": 12
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 3,
+				"wounds": 18
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 4,
+				"wounds": 24
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 5,
+				"wounds": 30
+			},
+			{
+				"deck": "Hero",
+				"type": "ClassRule",
+				"name": "Tech",
+				"amount": 1
+			}
+		]
+    },
+    { // Midtown Bank Robbery
+        "name": "Midtown Bank Robbery",
+        "edition": "Core",
+        "rules": [
+            {
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 2,
+				"bystanders": 12
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 3,
+				"bystanders": 12
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 4,
+				"bystanders": 12
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 5,
+				"bystanders": 12
+			}
+		]
+    },
+    { // Negative Zone Prison Breakout
+        "name": "Negative Zone Prison Breakout",
+        "edition": "Core",
+        "rules": [
+            {
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 2,
+				"henchmen": 2
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 3,
+				"henchmen": 2
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 4,
+				"henchmen": 3
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 5,
+				"henchmen": 3
+			}
+		]
+    },
+    { // Portals to the Dark Dimension
+        "name": "Portals to the Dark Dimension",
+        "edition": "Core",
+        "rules": [
+            {
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 2,
+				"twists": 7
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 3,
+				"twists": 7
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 4,
+				"twists": 7
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 5,
+				"twists": 7
+			}
+		]
+    },
+    { // Replace Earth"s Leaders with Killbots
+        "name": "Replace Earth's Leaders with Killbots",
+        "edition": "Core",
+        "rules": [
+            {
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 2,
+				"twists": 5,
+				"villains": 4
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 3,
+				"twists": 5,
+				"villains": 4
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 4,
+				"twists": 5,
+				"villains": 4
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 5,
+				"twists": 5,
+				"villains": 5
+			}
+		]
+    },
+    { // Secret Invasion of the Skrull Shapeshifters
+        "name": "Secret Invasion of the Skrull Shapeshifters",
+        "edition": "Core",
+        "rules": [
+            {
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 2,
+				"heroes": 6
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 3,
+				"heroes": 6
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 4,
+				"heroes": 6
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 5,
+				"heroes": 6
+			},
+			{
+				"deck": "Villain",
+				"type": "VillainRule",
+				"name": "Skrulls",
+				"amount": 1
+			}
+		]
+    },
+    { // Super Hero Civil War
+        "name": "Super Hero Civil War",
+        "edition": "Core",
+        "rules": [
+            {
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 2,
+				"heroes": 6
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 3,
+				"heroes": 5
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 4,
+				"heroes": 5
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 5,
+				"heroes": 5
+			}
+		]
+    },
+    { // Unleash the Power of the Cosmic Cube
+        "name": "Unleash the Power of the Cosmic Cube",
+        "edition": "Core"
+    },
+    { // Capture Baby hope
+        "name": "Capture Baby hope",
+        "edition": "Dark City"
+    },
+    { // Detonate the Helicarrier
+        "name": "Detonate the Helicarrier",
+        "edition": "Dark City",
+        "rules": [
+            {
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 2,
+				"heroes": 6
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 3,
+				"heroes": 6
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 4,
+				"heroes": 6
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 5,
+				"heroes": 6
+			}
+		]
+    },
+    { // Massive Earthquake Generator
+        "name": "Massive Earthquake Generator",
+        "edition": "Dark City",
+        "rules": [
+			{
+				"deck": "Hero",
+				"type": "ClassRule",
+				"name": "Strength",
+				"amount": 1
+			}
+		]
+    },
+    { // Organized Crime Wave
+        "name": "Organized Crime Wave",
+        "edition": "Dark City",
+        "rules": [
+			{
+				"deck": "Villain",
+				"type": "HenchmanRule",
+				"name": "Maggia Goons",
+				"amount": 1
+			}
+		]
+    },
+    { // Save Humanity
+        "name": "Save Humanity",
+        "edition": "Dark City",
+        "rules": [
+            {
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 2,
+				"twists": 8,
+				"heroes": 6
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 3,
+				"twists": 8,
+				"heroes": 6
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 4,
+				"twists": 8,
+				"heroes": 6
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 5,
+				"twists": 8,
+				"heroes": 7
+			},
+			{
+				"deck": "Hero",
+				"type": "ClassRule",
+				"name": "Instinct",
+				"amount": 1
+			}
+		]
+    },
+    { // Transform Citizens into Demons
+        "name": "Transform Citizens into Demons",
+        "edition": "Dark City",
+        "rules": [
+            {
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 2,
+				"villains": 3
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 3,
+				"villains": 4
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 4,
+				"villains": 4
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 5,
+				"villains": 5
+			},
+			{
+				"deck": "Villain",
+				"type": "HeroRule",
+				"name": "Jean Grey",
+				"amount": 1
+			}
+		]
+    },
+    { // Steal the Weaponized Plutonium
+        "name": "Steal the Weaponized Plutonium",
+        "edition": "Dark City",
+        "rules": [
+            {
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 2,
+				"villains": 3
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 3,
+				"villains": 4
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 4,
+				"villains": 4
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 5,
+				"villains": 5
+			}
+		]
+    },
+    { // X-Cutioner's Song
+        "name": "X-Cutioner's Song",
+        "edition": "Dark City",
+        "rules": [
+            {
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 2,
+				"villains": 3,
+				"bystanders": 0
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 3,
+				"villains": 4,
+				"bystanders": 0
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 4,
+				"villains": 4,
+				"bystanders": 0
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 5,
+				"villains": 5,
+				"bystanders": 0
+			},
+			{
+				"deck": "Villain",
+				"type": "HeroRule",
+				"name": "Random",
+				"amount": 1
+			}
+		]
+    },
+    { // Build an Army of Annihilation
+        "name": "Build an Army of Annihilation",
+        "edition": "Secret Wars Volume 1",
+        "rules": [
+            {
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 2,
+				"twists": 9,
+				"henchmen": 2
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 3,
+				"twists": 9,
+				"henchmen": 2
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 4,
+				"twists": 9,
+				"henchmen": 3
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 5,
+				"twists": 9,
+				"henchmen": 3
+			}
+		]
+    },
+    { // Corrupt the Next Generation of Heroes
+        "name": "Corrupt the Next Generation of Heroes",
+        "edition": "Secret Wars Volume 1",
+        "rules": [
+            {
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 2,
+				"villains": 3
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 3,
+				"villains": 4
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 4,
+				"villains": 4
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 5,
+				"villains": 5
+			},
+			{
+				"deck": "Villain",
+				"type": "CardRule",
+				"name": "Sidekicks",
+				"amount": 10
+			}
+		]
+    },
+    { // Crush Them With My Bare Hands
+        "name": "Crush Them With My Bare Hands",
+        "edition": "Secret Wars Volume 1",
+        "rules": [
+            {
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 2,
+				"twists": 5
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 3,
+				"twists": 5
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 4,
+				"twists": 5
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 5,
+				"twists": 5
+			}
+		]
+    },
+    { // Dark Alliance
+        "name": "Dark Alliance",
+        "edition": "Secret Wars Volume 1",
+        "rules": [
+            {
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 2,
+				"masterminds": 2
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 3,
+				"masterminds": 2
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 4,
+				"masterminds": 2
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 5,
+				"masterminds": 2
+			}
+		]
+    },
+    { // Fragmented Realities
+        "name": "Fragmented Realities",
+        "edition": "Secret Wars Volume 1",
+        "rules": [
+            {
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 2,
+				"twists": 4,
+				"henchmen": 2
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 3,
+				"twists": 6,
+				"henchmen": 2
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 4,
+				"twists": 8,
+				"henchmen": 3
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 5,
+				"twists": 10,
+				"henchmen": 3
+			}
+		]
+    },
+    { // Master of Tyrants
+        "name": "Master of Tyrants",
+        "edition": "Secret Wars Volume 1",
+        "rules": [
+            {
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 2,
+				"villains": 5
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 3,
+				"villains": 6
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 4,
+				"villains": 6
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 5,
+				"villains": 7
+			},
+			{
+				"deck": "Villain",
+				"type": "MastermindRule",
+				"name": "Random",
+				"amount": 1
+			},
+			{
+				"deck": "Villain",
+				"type": "MastermindRule",
+				"name": "Random",
+				"amount": 1
+			},
+			{
+				"deck": "Villain",
+				"type": "MastermindRule",
+				"name": "Random",
+				"amount": 1
+			}
+		]
+    },
+    { // Pan-Dimensional Plague
+        "name": "Pan-Dimensional Plague",
+        "edition": "Secret Wars Volume 1",
+        "rules": [
+            {
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 2,
+				"twists": 10
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 3,
+				"twists": 10
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 4,
+				"twists": 10
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 5,
+				"twists": 10
+			}
+		]
+    },
+    { // Smash Two Dimensions Together
+        "name": "Smash Two Dimensions Together",
+        "edition": "Secret Wars Volume 1",
+        "rules": [
+            {
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 2,
+				"villains": 3
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 3,
+				"villains": 4
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 4,
+				"villains": 4
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 5,
+				"villains": 5
+			}
+		]
+    },
+    { // Deadlands Hordes Charge the Wall
+        "name": "Deadlands Hordes Charge the Wall",
+        "edition": "Secret Wars Volume 2",
+        "rules": [
+            {
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 2,
+				"villains": 3
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 3,
+				"villains": 4
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 4,
+				"villains": 4
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 5,
+				"villains": 5
+			}
+		]
+    },
+    { // Enthrone the Barons of Battleworld
+        "name": "Enthrone the Barons of Battleworld",
+        "edition": "Secret Wars Volume 2"
+    },
+    { // The Fountain of Eternal Life
+        "name": "The Fountain of Eternal Life",
+        "edition": "Secret Wars Volume 2"
+    },
+    { // The God-Emperor of Battleworld
+        "name": "The God-Emperor of Battleworld",
+        "edition": "Secret Wars Volume 2",
+        "rules": [
+			{
+				"deck": "Hero",
+				"type": "ClassRule",
+				"name": "Tech",
+				"amount": 1
+			}
+		]
+    },
+    { // The Mark of Khonshu
+        "name": "The Mark of Khonshu",
+        "edition": "Secret Wars Volume 2",
+        "rules": [
+            {
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 2,
+				"twists": 10,
+				"villains": 3
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 3,
+				"twists": 10,
+				"villains": 4
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 4,
+				"twists": 10,
+				"villains": 4
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 5,
+				"twists": 10,
+				"villains": 5
+			},
+			{
+				"deck": "Villain",
+				"type": "HenchmanRule",
+				"name": "Khonshu Guardians",
+				"amount": 1
+			},
+			{
+				"deck": "Villain",
+				"type": "HeroRule",
+				"name": "Random",
+				"amount": 1
+			}
+		]
+    },
+    { // Master the Mysteries of Kung-Fu
+        "name": "Master the Mysteries of Kung-Fu",
+        "edition": "Secret Wars Volume 2"
+    },
+    { // Secret Wars
+        "name": "Secret Wars",
+        "edition": "Secret Wars Volum 2",
+        "rules": [
+            {
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 2,
+				"masterminds": 4
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 3,
+				"masterminds": 4
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 4,
+				"masterminds": 4
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 5,
+				"masterminds": 4
+			}
+		]
+    },
+    { // Sinister Ambitions
+        "name": "Sinister Ambitions",
+        "edition": "Secret Wars Volume 2",
+        "rules": [
+            {
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 2,
+				"twists": 6,
+				"villains": 3
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 3,
+				"twists": 6,
+				"villains": 4
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 4,
+				"twists": 6,
+				"villains": 4
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 5,
+				"twists": 6,
+				"villains": 5
+			},
+			{
+				"deck": "Villain",
+				"type": "CardRule",
+				"name": "Ambition Cards",
+				"amount": 10
+			}
+		]
+    },
+    { // Weave a Web of Lies
+        "name": "Weave a Web of Lies",
+        "edition": "Paint the Town Red",
+        "rules": [
+            {
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 2,
+				"twists": 7
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 3,
+				"twists": 7
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 4,
+				"twists": 7
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 5,
+				"twists": 7
+			}
+		]
+    },
+    { // The Clone Saga
+        "name": "The Clone Saga",
+        "edition": "Paint the Town Red"
+    },
+    { // Invade the Daily Bugle News HQ
+        "name": "Invade the Daily Bugle News HQ",
+        "edition": "Paint the Town Red",
+        "rules": [
+			{
+				"deck": "Hero",
+				"type": "HenchmanRule",
+				"name": "Random",
+				"amount": 6
+			}
+		]
+    },
+    { // Splice Humans with Spider DNA
+        "name": "Splice Humans with Spider DNA",
+        "edition": "Paint the Town Red",
+        "rules": [
+			{
+				"deck": "Villain",
+				"type": "VillainRule",
+				"name": "Sinister Six",
+				"amount": 1
+			}
+		]
+    },
+    { // Forge the Infinity Gauntlet
+        "name": "Forge the Infinity Gauntlet",
+        "edition": "Guardians of the Galaxy",
+        "rules": [
+			{
+				"deck": "Villain",
+				"type": "VillainRule",
+				"name": "Infinity Gems",
+				"amount": 1
+			}
+		]
+    },
+    { // Intergalactic Kree Nega-Bomb
+        "name": "Intergalactic Kree Nega-Bomb",
+        "edition": "Guardians of the Galaxy",
+        "rules": [
+            {
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 2,
+				"bystanders": 8
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 3,
+				"bystanders": 14
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 4,
+				"bystanders": 14
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 5,
+				"bystanders": 18
+			}
+		]
+    },
+    { // The Kree-Skrull War
+        "name": "The Kree-Skrull War",
+        "edition": "Guardians of the Galaxy",
+        "rules": [
+			{
+				"deck": "Villain",
+				"type": "VillainRule",
+				"name": "Kree Force",
+				"amount": 1
+			},
+			{
+				"deck": "Villain",
+				"type": "VillainRule",
+				"name": "Skrulls",
+				"amount": 1
+			}
+		]
+    },
+    { // Unite the Shards
+        "name": "Unite the Shards",
+        "edition": "Guardians of the Galaxy",
+        "rules": [
+            {
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 2,
+				"twists": 7
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 3,
+				"twists": 8
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 4,
+				"twists": 9
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 5,
+				"twists": 10
+			}
+		]
+    },
+    { // Everybody Hates Deadpool
+        "name": "Everybody Hates Deadpool",
+        "edition": "Deadpool",
+        "rules": [
+            {
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 2,
+				"twists": 6
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 3,
+				"twists": 6
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 4,
+				"twists": 6
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 5,
+				"twists": 6
+			},
+			{
+				"deck": "Hero",
+				"type": "TeamRule",
+				"name": "Deadpool",
+				"amount": 1
+			}
+		]
+    },
+    { // Deadpool Kills the Marvel Universe
+        "name": "Deadpool Kills the Marvel Universe",
+        "edition": "Deadpool",
+        "rules": [
+            {
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 2,
+				"twists": 6,
+				"heroes": 4
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 3,
+				"twists": 6
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 4,
+				"twists": 5
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 5,
+				"twists": 5
+			},
+			{
+				"deck": "Hero",
+				"type": "HeroRule",
+				"name": "Deadpool (Deadpool)",
+				"amount": 1
+			}
+		]
+    },
+    { // Deadpool Wants a Chimichanga
+        "name": "Deadpool Wants a Chimichanga",
+        "edition": "Deadpool",
+        "rules": [
+            {
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 2,
+				"twists": 6,
+				"bystanders": 12
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 3,
+				"twists": 6,
+				"bystanders": 12,
+				"villains": 4
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 4,
+				"twists": 6,
+				"bystanders": 12,
+				"villains": 4
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 5,
+				"twists": 6,
+				"bystanders": 12,
+				"villains": 5
+			}
+		]
+    },
+    { // Deadpool Writes a Scheme
+        "name": "Deadpool Writes a Scheme",
+        "edition": "Deadpool",
+        "rules": [
+            {
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 2,
+				"twists": 6
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 3,
+				"twists": 6
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 4,
+				"twists": 6
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 5,
+				"twists": 6
+			},
+			{
+				"deck": "Hero",
+				"type": "HeroRule",
+				"name": "Deadpool (Deadpool)",
+				"amount": 1
+			}
+		]
+    },
+    { // Avengers VS. X-Men
+        "name": "Avengers VS. X-Men",
+        "edition": "Civil War",
+        "rules": [
+            {
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 2,
+				"twists": 9,
+				"heroes": 6
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 3,
+				"twists": 9,
+				"heroes": 6
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 4,
+				"twists": 9,
+				"heroes": 6
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 5,
+				"twists": 9,
+				"heroes": 6
+			},
+			{
+				"deck": "Hero",
+				"type": "TeamRule",
+				"name": "Random",
+				"amount": 3
+			},
+			{
+				"deck": "Hero",
+				"type": "TeamRule",
+				"name": "Random",
+				"amount": 3
+			}
+		]
+    },
+    { // Dark Reign of H.A.M.M.E.R. Officers
+        "name": "Dark Reign of H.A.M.M.E.R. Officers",
+        "edition": "Civil War",
+        "rules": [
+            {
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 2,
+				"twists": 7
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 3,
+				"twists": 7
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 4,
+				"twists": 7
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 5,
+				"twists": 7
+			}
+		]
+    },
+    { // Epic Super Hero Civil War
+        "name": "Epic Super Hero Civil War",
+        "edition": "Civil War",
+        "rules": [
+            {
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 2,
+				"twists": 9
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 3,
+				"twists": 9
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 4,
+				"twists": 6
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 5,
+				"twists": 6
+			}
+		]
+    },
+    { // Imprison Unregistered Superhumans
+        "name": "Imprison Unregistered Superhumans",
+        "edition": "Civil War",
+        "rules": [
+            {
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 2,
+				"twists": 11
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 3,
+				"twists": 11
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 4,
+				"twists": 11
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 5,
+				"twists": 11
+			}
+		]
+    },
+    { // Nitro the Supervillain Threatens Crowds
+        "name": "Nitro the Supervillain Threatens Crowds",
+        "edition": "Civil War"
+    },
+    { // Predict Future Crime
+        "name": "Predict Future Crime",
+        "edition": "Civil War",
+        "rules": [
+            {
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 2,
+				"twists": 6,
+				"villains": 3
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 3,
+				"twists": 6,
+				"villains": 4
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 4,
+				"twists": 6,
+				"villains": 4
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 5,
+				"twists": 6,
+				"villains": 5
+			}
+		]
+    },
+    { // Reveal Heroes' Secret Identities
+        "name": "Reveal Heroes' Secret Identities",
+        "edition": "Civil War",
+        "rules": [
+            {
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 2,
+				"twists": 6,
+				"heroes": 7
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 3,
+				"twists": 6,
+				"heroes": 7
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 4,
+				"twists": 6,
+				"heroes": 7
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 5,
+				"twists": 6,
+				"heroes": 7
+			}
+		]
+    },
+    { // United States Split by Civil War
+        "name": "United States Split by Civil War",
+        "edition": "Civil War",
+        "rules": [
+            {
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 2,
+				"twists": 10
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 3,
+				"twists": 10
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 4,
+				"twists": 10
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 5,
+				"twists": 10
+			}
+		]
+    },
+    { // Brainwash the Military
+        "name": "Brainwash the Military",
+        "edition": "Captain America 75th Anniversary",
+        "rules": [
+            {
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 2,
+				"twists": 7
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 3,
+				"twists": 7
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 4,
+				"twists": 7
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 5,
+				"twists": 7
+			},
+			{
+				"deck": "Hero",
+				"type": "CardRule",
+				"name": "S.H.I.E.L.D. Officer",
+				"amount": 12
+			}
+		]
+    },
+    { // Change the Outcome of WWII
+        "name": "Change the Outcome of WWII",
+        "edition": "Captain America 75th Anniversary",
+        "rules": [
+            {
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 2,
+				"twists": 7,
+				"villains": 3
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 3,
+				"twists": 7,
+				"villains": 4
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 4,
+				"twists": 7,
+				"villains": 4
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 5,
+				"twists": 7,
+				"villains": 5
+			}
+		]
+    },
+    { // Go Back in Time to Slay Heroes' Ancestors
+        "name": "Go Back in Time to Slay Heroes' Ancestors",
+        "edition": "Captain America 75th Anniversary",
+        "rules": [
+            {
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 2,
+				"twists": 9,
+				"heroes": 8
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 3,
+				"twists": 9,
+				"heroes": 8
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 4,
+				"twists": 9,
+				"heroes": 8
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 5,
+				"twists": 9,
+				"heroes": 8
+			}
+		]
+    },
+    { // The Unbreakable Enigma Code
+        "name": "The Unbreakable Enigma Code",
+        "edition": "Captain America 75th Anniversary",
+        "rules": [
+            {
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 2,
+				"twists": 6
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 3,
+				"twists": 6
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 4,
+				"twists": 6
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 5,
+				"twists": 6
+			}
+		]
+    },
+    { // Flood the Planet with Melted Glaciers
+        "name": "Flood the Planet with Melted Glaciers",
+        "edition": "Fantastic 4"
+    },
+    { // Bathe Earth in Cosmic Rays
+        "name": "Bathe Earth in Cosmic Rays",
+        "edition": "Fantastic 4"
+    },
+    { // Invincible Force Field
+        "name": "Invincible Force Field",
+        "edition": "Fantastic 4"
+    },
+    { // Pull Reality Into the Negative Zone
+        "name": "Pull Reality Into the Negative Zone",
+        "edition": "Fantastic 4"
+    },
+    { // Mutant-Hunting Super Sentinels
+        "name": "Mutant-Hunting Super Sentinels",
+        "edition": "X-Men",
+        "rules": [
+            {
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 2,
+				"twists": 9,
+				"henchmen": 2
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 3,
+				"twists": 9,
+				"henchmen": 2
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 4,
+				"twists": 9,
+				"henchmen": 3
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 5,
+				"twists": 9,
+				"henchmen": 3
+			},
+			{
+				"deck": "Villain",
+				"type": "HenchmanRule",
+				"name": "Sentinel",
+				"amount": 1
+			}
+		]
+    },
+    { // Alien Brood Encounters
+        "name": "Alien Brood Encounters",
+        "edition": "X-Men",
+        "rules": [
+            {
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 2,
+				"bystanders": 0,
+				"henchman": 2
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 3,
+				"bystanders": 0,
+				"henchman": 2
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 4,
+				"bystanders": 0,
+				"henchman": 3
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 5,
+				"bystanders": 0,
+				"henchman": 3
+			},
+			{
+				"deck": "Villain",
+				"type": "HenchmanRule",
+				"name": "The Brood",
+				"amount": 1
+			}
+		]
+    },
+    { // X-Men Danger Room Goes Berserk
+        "name": "X-Men Danger Room Goes Berserk",
+        "edition": "X-Men"
+    },
+    { // The Dark Phoenix Saga
+        "name": "The Dark Phoenix Saga",
+        "edition": "X-Men",
+        "rules": [
+            {
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 2,
+				"twists": 10
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 3,
+				"twists": 10
+                    
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 4,
+				"twists": 10
+                    
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 5,
+				"twists": 10
+                    
+			},
+			{
+				"deck": "Villain",
+				"type": "VillainRule",
+				"name": "Hellfire Club",
+				"amount": 1
+			},
+			{
+				"deck": "Villain",
+				"type": "HeroRule",
+				"name": "Jean Grey",
+				"amount": 1
+			}
+		]
+    },
+    { // Horror of Horrors
+        "name": "Horror of Horrors",
+        "edition": "X-Men",
+        "rules": [
+            {
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 2,
+				"twists": 6,
+				"villains": 3
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 3,
+				"twists": 6,
+				"villains": 4
+                    
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 4,
+				"twists": 6,
+				"villains": 4
+                    
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 5,
+				"twists": 6,
+				"villains": 5
+                    
+			},
+			{
+				"deck": "Villain",
+				"type": "CardRule",
+				"name": "Horror Cards (next to Villain Deck)",
+				"amount": 5
+			}
+		]
+    },
+    { // Nuclear Armageddon
+        "name": "Nuclear Armageddon",
+        "edition": "X-Men",
+        "rules": [
+            {
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 2,
+				"twists": 5
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 3,
+				"twists": 5
+                    
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 4,
+				"twists": 5
+                    
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 5,
+				"twists": 5
+                    
+			}
+		]
+    },
+    { // Anti-Mutant Hatred
+        "name": "Anti-Mutant Hatred",
+        "edition": "X-Men",
+        "rules": [
+            {
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 2,
+				"twists": 11,
+				"wounds": 30
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 3,
+				"twists": 11,
+				"wounds": 30
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 4,
+				"twists": 11,
+				"wounds": 30      
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 5,
+				"twists": 11,
+				"wounds": 30
+			}
+		]
+    },
+    { // Televised Deathtraps of Mojoworld
+        "name": "Televised Deathtraps of Mojoworld",
+        "edition": "X-Men",
+        "rules": [
+            {
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 2,
+				"twists": 11,
+				"wounds": 12
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 3,
+				"twists": 11,
+				"wounds": 18      
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 4,
+				"twists": 11,
+				"wounds": 24      
+			},
+			{
+				"deck": "All",
+				"type": "SettingRule",
+				"players": 5,
+				"twists": 11,
+				"wounds": 30
+			}
+		]
+    }
+]

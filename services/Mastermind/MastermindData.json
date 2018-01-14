@@ -1,0 +1,584 @@
+[
+	{ // Loki
+		"name": "Loki",
+		"edition": "Core",
+		"rules": [
+			{
+				"deck": "Villain",
+				"type": "VillainRule",
+				"name": "Enemies of Asgard",
+				"amount": 1
+			},
+			{
+				"deck": "Hero",
+				"type": "ClassRule",
+				"name": "Strength",
+				"amount": 1
+			}
+		]
+	},
+	{ // Magneto
+		"name": "Magneto",
+		"edition": "Core",
+		"rules": [
+			{
+				"deck": "Villain",
+				"type": "VillainRule",
+				"name": "Brotherhood",
+				"amount": 1
+			},
+			{
+				"deck": "Hero",
+				"type": "TeamRule",
+				"name": "X-Men",
+				"amount": 1
+			}
+		]
+	},
+	{ // Dr. Doom
+		"name": "Dr. Doom",
+		"edition": "Core",
+		"rules": [
+			{
+				"deck": "Villain",
+				"type": "HenchmanRule",
+				"name": "Doombot Legion",
+				"amount": 1
+			},
+			{
+				"deck": "Hero",
+				"type": "ClassRule",
+				"name": "Tech",
+				"amount": 1
+			}
+		]
+	},
+	{ // Red Skull
+		"name": "Red Skull",
+		"edition": "Core",
+		"rules": [
+			{
+				"deck": "Villain",
+				"type": "VillainRule",
+				"name": "Hydra",
+				"amount": 1
+			}
+		]
+	},
+	{ // Apocalypse
+		"name": "Apocalypse",
+		"edition": "Dark City",
+		"rules": [
+			{
+				"deck": "Villain",
+				"type": "VillainRule",
+				"name": "Four Horsemen",
+				"amount": 1
+			}
+		]
+	},
+	{ // Kingpin
+		"name": "Kingpin",
+		"edition": "Dark City",
+		"rules": [
+			{
+				"deck": "Villain",
+				"type": "VillainRule",
+				"name": "Streets of New York",
+				"amount": 1
+			},
+			{
+				"deck": "Hero",
+				"type": "TeamRule",
+				"name": "Marvel Knights",
+				"amount": 1
+			}
+		]
+	},
+	{ // Mr. Sinister
+		"name": "Mr. Sinister",
+		"edition": "Dark City",
+		"rules": [
+			{
+				"deck": "Villain",
+				"type": "VillainRule",
+				"name": "Marauders",
+				"amount": 1
+			},
+			{
+				"deck": "Hero",
+				"type": "ClassRule",
+				"name": "Covert",
+				"amount": 1
+			}
+		]
+	},
+	{ // Mephisto
+		"name": "Mephisto",
+		"edition": "Dark City",
+		"rules": [
+			{
+				"deck": "Villain",
+				"type": "VillainRule",
+				"name": "Underworld",
+				"amount": 1
+			},
+			{
+				"deck": "Hero",
+				"type": "TeamRule",
+				"name": "Marvel Knights",
+				"amount": 1
+			}
+		]
+	},
+	{ // Stryfe
+		"name": "Stryfe",
+		"edition": "Dark City",
+		"rules": [
+			{
+				"deck": "Villain",
+				"type": "VillainRule",
+				"name": "MLF",
+				"amount": 1
+			},
+			{
+				"deck": "Hero",
+				"type": "TeamRule",
+				"name": "X-Force",
+				"amount": 1
+			}
+		]
+	},
+	{ // Carnage
+		"name": "Carnage",
+		"edition": "Paint the Town Red",
+		"rules": [
+			{
+				"deck": "Villain",
+				"type": "VillainRule",
+				"name": "Maximum Carnage",
+				"amount": 1
+			}
+		]
+	},
+	{ // Mysterio
+		"name": "Mysterio",
+		"edition": "Paint the Town Red",
+		"rules": [
+			{
+				"deck": "Villain",
+				"type": "VillainRule",
+				"name": "Sinister Six",
+				"amount": 1
+			}
+		]
+	},
+	{ // Spider-Queen
+		"name": "Spider-Queen",
+		"edition": "Paint the Town Red",
+		"rules": [
+			{
+				"deck": "Villain",
+				"type": "HenchmanRule",
+				"name": "Spider-Infected",
+				"amount": 1
+			},
+			{
+				"deck": "Hero",
+				"type": "TeamRule",
+				"name": "Spider Friends",
+				"amount": 1
+			}
+		]
+	},
+	{ // Supreme Intelligence of the Kree
+		"name": "Supreme Intelligence of the Kree",
+		"edition": "Guardians of the Galaxy",
+		"rules": [
+			{
+				"deck": "Villain",
+				"type": "VillainRule",
+				"name": "Kree Force",
+				"amount": 1
+			}
+		]
+	},
+	{ // Thanos
+		"name": "Thanos (Mastermind)",
+		"edition": "Guardians of the Galaxy",
+		"rules": [
+			{
+				"deck": "Villain",
+				"type": "VillainRule",
+				"name": "Infinity Gems",
+				"amount": 1
+			}
+		]
+	},
+	{ // Authoritarian Iron Man
+		"name": "Authoritarian Iron Man",
+		"edition": "Civil War",
+		"rules": [
+			{
+				"deck": "Villain",
+				"type": "VillainRule",
+				"name": "Superhuman Registration Act",
+				"amount": 1
+			}
+		]
+	},
+	{ // Baron Helmut Zemo
+		"name": "Baron Helmut Zemo",
+		"edition": "Civil War",
+		"rules": [
+			{
+				"deck": "Villain",
+				"type": "VillainRule",
+				"name": "Thunderbolts",
+				"amount": 1
+			}
+		]
+	},
+	{ // Maria Hill, Director of S.H.I.E.L.D.
+		"name": "Maria Hill, Director of S.H.I.E.L.D.",
+		"edition": "Civil War",
+		"rules": [
+			{
+				"deck": "Villain",
+				"type": "VillainRule",
+				"name": "S.H.I.E.L.D. Elite",
+				"amount": 1
+			},
+			{
+				"deck": "Hero",
+				"type": "TeamRule",
+				"name": "S.H.I.E.L.D.",
+				"amount": 1
+			}
+		]
+	},
+	{ // Misty Knight
+		"name": "Misty Knight",
+		"edition": "Civil War",
+		"rules": [
+			{
+				"deck": "Villain",
+				"type": "VillainRule",
+				"name": "Heroes for Hire",
+				"amount": 1
+			},
+			{
+				"deck": "Hero",
+				"type": "TeamRule",
+				"name": "Marvel Knights",
+				"amount": 1
+			}
+		]
+	},
+	{ // Ragnarok
+		"name": "Ragnarok",
+		"edition": "Civil War",
+		"rules": [
+			{
+				"deck": "Villain",
+				"type": "VillainRule",
+				"name": "Registration Enforcers",
+				"amount": 1
+			},
+			{
+				"deck": "Hero",
+				"type": "ClassRule",
+				"name": "Ranged",
+				"amount": 1
+			}
+		]
+	},
+	{ // Arnim Zola
+		"name": "Arnim Zola",
+		"edition": "Captain America, 75th Anniversary",
+		"rules": [
+			{
+				"deck": "Villain",
+				"type": "VillainRule",
+				"name": "Zola's Creations",
+				"amount": 1
+			},
+			{
+				"deck": "Hero",
+				"type": "ClassRule",
+				"name": "Tech",
+				"amount": 1
+			}
+		]
+	},
+	{ // Baron Heinrich Zemo
+		"name": "Baron Heinrich Zemo",
+		"edition": "Captain America, 75th Anniversary",
+		"rules": [
+			{
+				"deck": "Villain",
+				"type": "VillainRule",
+				"name": "Masters of Evil (WWII)",
+				"amount": 1
+			},
+			{
+				"deck": "Hero",
+				"type": "TeamRule",
+				"name": "Avengers",
+				"amount": 1
+			}
+		]
+	},
+	{ // Madelyn Pryor, Goblin Queen
+		"name": "Madelyn Pryor, Goblin Queen",
+		"edition": "Secret Wars Volume 1",
+		"rules": [
+			{
+				"deck": "Villain",
+				"type": "VillainRule",
+				"name": "Limbo",
+				"amount": 1
+			},
+			{
+				"deck": "Hero",
+				"type": "TeamRule",
+				"name": "X-Men",
+				"amount": 1
+			}
+		]
+	},
+	{ // Nimrod, Super Sentinel
+		"name": "Nimrod, Super Sentinel",
+		"edition": "Secret Wars Volume 1",
+		"rules": [
+			{
+				"deck": "Villain",
+				"type": "VillainRule",
+				"name": "Sentinel Territories",
+				"amount": 1
+			},
+			{
+				"deck": "Hero",
+				"type": "ClassRule",
+				"name": "Tech",
+				"amount": 1
+			}
+		]
+	},
+	{ // Wasteland Hulk
+		"name": "Wasteland Hulk",
+		"edition": "Secret Wars Volume 1",
+		"rules": [
+			{
+				"deck": "Villain",
+				"type": "VillainRule",
+				"name": "Wasteland",
+				"amount": 1
+			},
+			{
+				"deck": "Hero",
+				"type": "ClassRule",
+				"name": "Tech",
+				"amount": 1
+			}
+		]
+	},
+	{ // Zombie Green Goblin
+		"name": "Zombie Green Goblin",
+		"edition": "Secret Wars Volume 1",
+		"rules": [
+			{
+				"deck": "Villain",
+				"type": "VillainRule",
+				"name": "The Deadlands",
+				"amount": 1
+			}
+		]
+	},
+	{ // Immortal Emperor Zheng Zhu
+		"name": "Immortal Emperor Zheng Zhu",
+		"edition": "Secret Wars Volume 2",
+		"rules": [
+			{
+				"deck": "Villain",
+				"type": "VillainRule",
+				"name": "K'un-Lun",
+				"amount": 1
+			},
+			{
+				"deck": "Hero",
+				"type": "TeamRule",
+				"name": "Marvel Knights",
+				"amount": 1
+			}
+		]
+	},
+	{ // King Hyperion
+		"name": "King Hyperion",
+		"edition": "Secret Wars Volume 2",
+		"rules": [
+			{
+				"deck": "Villain",
+				"type": "VillainRule",
+				"name": "Utopolis",
+				"amount": 1
+			}
+		]
+	},
+	{ // Shiklah, the Demon Bride
+		"name": "Shiklah, the Demon Bride",
+		"edition": "Secret Wars Volume 2",
+		"rules": [
+			{
+				"deck": "Villain",
+				"type": "VillainRule",
+				"name": "Monster Metropolis",
+				"amount": 1
+			}
+		]
+	},
+	{ // Evil Deadpool
+		"name": "Evil Deadpool",
+		"edition": "Deadpool",
+		"rules": [
+			{
+				"deck": "Villain",
+				"type": "VillainRule",
+				"name": "Evil Deadpool Corpse",
+				"amount": 1
+			}
+		]
+	},
+	{ // Macho Gomez
+		"name": "Macho Gomez",
+		"edition": "Deadpool",
+		"rules": [
+			{
+				"deck": "Villain",
+				"type": "VillainRule",
+				"name": "Deadpool's Friends",
+				"amount": 1
+			}
+		]
+	},
+	{ // Mojo
+		"name": "Mojo",
+		"edition": "X-Men",
+		"rules": [
+			{
+				"deck": "Villain",
+				"type": "VillainRule",
+				"name": "Mojoverse",
+				"amount": 1
+			},
+			{
+				"deck": "Hero",
+				"type": "ClassRule",
+				"name": "Tech",
+				"amount": 1
+			}
+		]
+	},
+	{ // Deathbird
+		"name": "Deathbird",
+		"edition": "X-Men",
+		"rules": [
+			{
+				"deck": "Villain",
+				"type": "VillainRule",
+				"name": "Shi'ar Imperial Guard",
+				"amount": 1
+			},
+			{
+				"deck": "Villain",
+				"type": "RandomRule",
+				"name": "Shi'ar Patrol Craft",
+				"amount": 1
+			},
+			{
+				"deck": "Villain",
+				"type": "RandomRule",
+				"name": "Shi'ar Death Commandos",
+				"amount": 1
+			}
+		]
+	},
+	{ // Dark Phoenix
+		"name": "Dark Phoenix",
+		"edition": "X-Men",
+		"rules": [
+			{
+				"deck": "Villain",
+				"type": "VillainRule",
+				"name": "Hellfire Club",
+				"amount": 1
+			}
+		]
+	},
+	{ // Mole Man
+		"name": "Mole Man",
+		"edition": "X-Men",
+		"rules": [
+			{
+				"deck": "Villain",
+				"type": "VillainRule",
+				"name": "Subterranea",
+				"amount": 1
+			}
+		]
+	},
+	{ // Onslaught
+		"name": "Onslaught",
+		"edition": "X-Men",
+		"rules": [
+			{
+				"deck": "Villain",
+				"type": "VillainRule",
+				"name": "Dark Descendants",
+				"amount": 1
+			},
+			{
+				"deck": "Hero",
+				"type": "TeamRule",
+				"name": "X-Men",
+				"amount": 1
+			}
+		]
+	},
+	{ // Arcade
+		"name": "Arcade",
+		"edition": "X-Men",
+		"rules": [
+			{
+				"deck": "Villain",
+				"type": "VillainRule",
+				"name": "Murderworld",
+				"amount": 1
+			}
+		]
+	},
+	{ // Galactus
+		"name": "Galactus",
+		"edition": "X-Men",
+		"rules": [
+			{
+				"deck": "Villain",
+				"type": "VillainRule",
+				"name": "Heralds of Galactus",
+				"amount": 1
+			}
+		]
+	},
+	{ // Shadow King
+		"name": "Shadow King",
+		"edition": "X-Men",
+		"rules": [
+			{
+				"deck": "Villain",
+				"type": "VillainRule",
+				"name": "Shadow-X",
+				"amount": 1
+			}
+		]
+	}
+]

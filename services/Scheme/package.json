@@ -1,0 +1,11 @@
+{
+    "name": "scheme",
+    "version": "0.0.0",
+    "license": "MIT",
+    "scripts": {
+      "start": "cd Scheme && dotnet run",
+      "push": "cd Scheme && dotnet publish && cf push",
+      "restore": "cd Scheme && dotnet restore",
+      "test": "cd Scheme.Tests.Unit && dotnet test && cd ..\\Scheme.Tests.Integration && dotnet test"
+    }
+}

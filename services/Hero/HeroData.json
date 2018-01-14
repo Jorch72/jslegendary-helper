@@ -1,0 +1,596 @@
+[
+    { // Storm
+        "name": "Storm",
+        "edition": "Core",
+        "teams": [ "X-Men" ],
+        "classes": [ "Covert","Ranged" ]
+    },
+    { // Captain America
+        "name": "Captain America",
+        "edition": "Core",
+        "teams": [ "Avengers" ],
+        "classes": [ "Covert", "Strength", "Tech", "Instinct" ]
+    },
+    { // Cyclops
+        "name": "Cyclops",
+        "edition": "Core",
+        "teams": [ "X-Men" ],
+        "classes": [ "Strength", "Ranged" ]
+    },
+    { // Professor X
+        "name": "Professor X",
+        "edition": "Core",
+        "teams": [ "X-Men" ],
+        "classes": [ "Covert", "Instinct", "Ranged" ]
+    },
+    { // Hawkeye
+        "name": "Hawkeye",
+        "edition": "Core",
+        "teams": [ "Avengers" ],
+        "classes": [ "Tech", "Instinct" ]
+    },
+    { // Thor
+        "name": "Thor",
+        "edition": "Core",
+        "teams": [ "Avengers" ],
+        "classes": [ "Strength", "Ranged" ]
+    },
+    { // Rogue
+        "name": "Rogue",
+        "edition": "Core",
+        "teams": [ "X-Men" ],
+        "classes": [ "Covert", "Strength" ]
+    },
+    { // Iron Man
+        "name": "Iron Man",
+        "edition": "Core",
+        "teams": [ "Avengers" ],
+        "classes": [ "Tech", "Ranged" ]
+    },
+    { // Black Widow
+        "name": "Black Widow",
+        "edition": "Core",
+        "teams": [ "Avengers" ],
+        "classes": [ "Covert", "Tech" ]
+    },
+    { // Deadpool (Core)
+        "name": "Deadpool (Core)",
+        "edition": "Core",
+        "teams": [ "None" ],
+        "classes": [ "Covert", "Tech", "Instinct" ]
+    },
+    { // Gambit
+        "name": "Gambit",
+        "edition": "Core",
+        "teams": [ "X-Men" ],
+        "classes": [ "Covert", "Ranged", "Instinct" ]
+    },
+    { // Nick Fury
+        "name": "Nick Fury",
+        "edition": "Core",
+        "teams": [ "S.H.I.E.L.D." ],
+        "classes": [ "Covert", "Tech", "Strength" ]
+    },
+    { // Spider-Man
+        "name": "Spider-Man",
+        "edition": "Core",
+        "teams": [ "Spider Friends" ],
+        "classes": [ "Covert", "Tech", "Instinct", "Strength" ]
+    },
+    { // Emma Frost
+        "name": "Emma Frost",
+        "edition": "Core",
+        "teams": [ "X-Men" ],
+        "classes": [ "Covert", "Instinct", "Ranged", "Strength" ]
+    },
+    { // Wolverine (Core)
+        "name": "Wolverine (Core)",
+        "edition": "Core",
+        "teams": [ "X-Men" ],
+        "classes": [ "Instinct" ]
+    },
+    { // Hulk
+        "name": "Hulk",
+        "edition": "Core",
+        "teams": [ "Avengers" ],
+        "classes": [ "Strength", "Instinct" ]
+    },
+    { // Iron Fist
+        "name": "Iron Fist",
+        "edition": "Dark City",
+        "teams": [ "Marvel Knights" ],
+        "classes": [ "Strength", "Instinct" ]
+    },
+    { // Cable
+        "name": "Cable",
+        "edition": "Dark City",
+        "teams": [ "X-Force" ],
+        "classes": [ "Covert", "Tech", "Ranged" ]
+    },
+    { // Domino
+        "name": "Domino",
+        "edition": "Dark City",
+        "teams": [ "X-Force" ],
+        "classes": [ "Covert", "Tech", "Instinct" ]
+    },
+    { // Wolverine (Dark City)
+        "name": "Wolverine (Dark City)",
+        "edition": "Dark City",
+        "teams": [ "X-Force" ],
+        "classes": [ "Covert", "Instinct", "Strength" ]
+    },
+    { // Moon Knight
+        "name": "Moon Knight",
+        "edition": "Dark City",
+        "teams": [ "Marvel Knights" ],
+        "classes": [ "Instinct", "Tech" ]
+    },
+    { // Angel
+        "name": "Angel",
+        "edition": "Dark City",
+        "teams": [ "X-Men" ],
+        "classes": [ "Covert", "Instinct", "Strength" ]
+    },
+    { // Forge
+        "name": "Forge",
+        "edition": "Dark City",
+        "teams": [ "X-Force" ],
+        "classes": [ "Tech" ]
+    },
+    { // Bishop
+        "name": "Bishop",
+        "edition": "Dark City",
+        "teams": [ "X-Men" ],
+        "classes": [ "Covert", "Ranged", "Tech" ]
+    },
+    { // Colossus
+        "name": "Colossus",
+        "edition": "Dark City",
+        "teams": [ "X-Force" ],
+        "classes": [ "Covert", "Strength" ]
+    },
+    { // Elektra
+        "name": "Elektra",
+        "edition": "Dark City",
+        "teams": [ "Marvel Knights" ],
+        "classes": [ "Covert","Instinct" ]
+    },
+    { // Jean Grey
+        "name": "Jean Grey",
+        "edition": "Dark City",
+        "teams": [ "Marvel Knights" ],
+        "classes": [ "Covert", "Instinct" ]
+    },
+    { // Blade
+        "name": "Blade",
+        "edition": "Dark City",
+        "teams": [ "Marvel Knights" ],
+        "classes": [ "Strength", "Tech", "Covert","Instinct" ]
+    },
+    { // Punisher
+        "name": "Punisher",
+        "edition": "Dark City",
+        "teams": [ "Marvel Knights" ],
+        "classes": [ "Tech","Strength" ]
+    },
+    { // Ghost Rider
+        "name": "Ghost Rider",
+        "edition": "Dark City",
+        "teams": [ "Marvel Knights" ],
+        "classes": [ "Tech","Ranged","Strength" ]
+    },
+    { // Daredevil (Dark City)
+        "name": "Daredevil (Dark City)",
+        "edition": "Dark City",
+        "teams": [ "Marvel Knights" ],
+        "classes": [ "Tech","Ranged","Strength" ]
+    },
+    { // Night Crawler
+        "name": "Night Crawler",
+        "edition": "Dark City",
+        "teams": [ "X-Men" ],
+        "classes": [ "Covert","Instinct" ]
+    },
+    { // Iceman
+        "name": "Iceman",
+        "edition": "Dark City",
+        "teams": [ "X-Men" ],
+        "classes": [ "Strength","Ranged" ]
+    },
+    { // Symbiote Spider-Man
+        "name": "Symbiote Spider-Man",
+        "edition": "Paint the Town Red",
+        "teams": [ "Spider Friends" ],
+        "classes": [ "Instinct","Strength","Covert","Ranged" ]
+    },
+    { // Scarlet Spider
+        "name": "Scarlet Spider",
+        "edition": "Paint the Town Red",
+        "teams": [ "Spider Friends" ],
+        "classes": [ "Instinct","Covert","Strength" ]
+    },
+    { // Black Cat
+        "name": "Black Cat",
+        "edition": "Paint the Town Red",
+        "teams": [ "Spider Friends" ],
+        "classes": [ "Instinct","Covert" ]
+    },
+    { // Spider-Woman
+        "name": "Spider-Woman",
+        "edition": "Paint the Town Red",
+        "teams": [ "Spider Friends" ],
+        "classes": [ "Covert","Ranged","Strength" ]
+    },
+    { // Groot
+        "name": "Groot",
+        "edition": "Guardians of the Galaxy",
+        "teams": [ "Guardians of the Galaxy" ],
+        "classes": [ "Strength","Covert" ]
+    },
+    { // Star-Lord
+        "name": "Star-Lord",
+        "edition": "Guardians of the Galaxy",
+        "teams": [ "Guardians of the Galaxy" ],
+        "classes": [ "Ranged","Covert","Tech" ]
+    },
+    { // Rocket Raccoon
+        "name": "Rocket Raccoon",
+        "edition": "Guardians of the Galaxy",
+        "teams": [ "Guardians of the Galaxy" ],
+        "classes": [ "Ranged","Tech","Instinct" ]
+    },
+    { // Gamora
+        "name": "Gamora",
+        "edition": "Guardians of the Galaxy",
+        "teams": [ "Guardians of the Galaxy" ],
+        "classes": [ "Strength","Instinct" ]
+    },
+    { // Drax the Destroyer
+        "name": "Drax the Destroyer",
+        "edition": "Guardians of the Galaxy",
+        "teams": [ "Guardians of the Galaxy" ],
+        "classes": [ "Strength","Instinct" ]
+    },
+    { // Daredevil (Civil War)
+        "name": "Daredevil (Civil War)",
+        "edition": "Civil War",
+        "teams": [ "Avengers","Marvel Knights" ],
+        "classes": [ "Covert","Instinct","Strength" ]
+    },
+    { // Tigra
+        "name": "Tigra",
+        "edition": "Civil War",
+        "teams": [ "Avengers" ],
+        "classes": [ "Covert","Instinct" ]
+    },
+    { // Stature
+        "name": "Stature",
+        "edition": "Civil War",
+        "teams": [ "Avengers" ],
+        "classes": [ "Strength","Tech" ]
+    },
+    { // Vision
+        "name": "Vision",
+        "edition": "Civil War",
+        "teams": [ "Avengers" ],
+        "classes": [ "Ranged","Tech" ]
+    },
+    { // Peter Parker
+        "name": "Peter Parker",
+        "edition": "Civil War",
+        "teams": [ "Avengers" ],
+        "classes": [ "Tech" ]
+    },
+    { // Captain America, Secret Avenger
+        "name": "Captain America, Secret Avenger",
+        "edition": "Civil War",
+        "teams": [ "Avengers" ],
+        "classes": [ "Covert","Strength","Instinct","Ranged","Tech" ]
+    },
+    { // Storm and Black Panther
+        "name": "Storm and Black Panther",
+        "edition": "Civil War",
+        "teams": [ "Avengers","X-Men" ],
+        "classes": [ "Tech","Ranged","Covert" ]
+    },
+    { // Goliath
+        "name": "Goliath",
+        "edition": "Civil War",
+        "teams": [ "Avengers" ],
+        "classes": [ "Tech","Strength" ]
+    },
+    { // Patriot
+        "name": "Patriot",
+        "edition": "Civil War",
+        "teams": [ "Avengers" ],
+        "classes": [ "Covert","Instinct","Strength","Tech" ]
+    },
+    { // Falcon
+        "name": "Falcon",
+        "edition": "Civil War",
+        "teams": [ "Avengers" ],
+        "classes": [ "Instinct","Tech","Ranged" ]
+    },
+    { // Penumbra
+        "name": "Penumbra",
+        "edition": "Civil War",
+        "teams": [ "Avengers","Marvel Knights" ],
+        "classes": [ "Ranged","Covert" ]
+    },
+    { // Luke Cage
+        "name": "Luke Cage",
+        "edition": "Civil War",
+        "teams": [ "Avengers","Marvel Knights" ],
+        "classes": [ "Strength","Instinct" ]
+    },
+    { // Wiccan
+        "name": "Wiccan",
+        "edition": "Civil War",
+        "teams": [ "Avengers" ],
+        "classes": [ "Covert","Ranged" ]
+    },
+    { // Hulkling
+        "name": "Hulkling",
+        "edition": "Civil War",
+        "teams": [ "Avengers" ],
+        "classes": [ "Covert","Strength" ]
+    },
+    { // Hercules
+        "name": "Hercules",
+        "edition": "Civil War",
+        "teams": [ "Avengers" ],
+        "classes": [ "Instinct","Strength","Tech" ]
+    },
+    { // Speedball
+        "name": "Speedball",
+        "edition": "Civil War",
+        "teams": [ "New Warrior" ],
+        "classes": [ "Covert","Ranged" ]
+    },
+    { // Bob, Agent of Hydra
+        "name": "Bob, Agent of Hydra",
+        "edition": "Deadpool",
+        "teams": [ "Hydra" ],
+        "classes": [ "Covert","Tech" ]
+    },
+    { // Deadpool (Deadpool)
+        "name": "Deadpool (Deadpool)",
+        "edition": "Deadpool",
+        "teams": [ "Deadpool" ],
+        "classes": [ "Covert","Instinct","Strength","Tech" ]
+    },
+    { // Solo
+        "name": "Solo",
+        "edition": "Deadpool",
+        "teams": [ "Deadpool" ],
+        "classes": [ "Tech","Instinct" ]
+    },
+    { // Stingray
+        "name": "Stingray",
+        "edition": "Deadpool",
+        "teams": [ "Deadpool" ],
+        "classes": [ "Ranged","Tech" ]
+    },
+    { // Slapstick
+        "name": "Slapstick",
+        "edition": "Deadpool",
+        "teams": [ "Deadpool" ],
+        "classes": [ "Ranged","Tech" ]
+    },
+    { // Captain America (Falcon)
+        "name": "Captain America (Falcon)",
+        "edition": "Captain America, 75th Anniversary",
+        "teams": [ "Avengers" ],
+        "classes": [ "Covert","Instinct","Ranged","Tech" ]
+    },
+    { // Steve Rogers, Director of S.H.I.E.L.D.
+        "name": "Steve Rogers, Director of S.H.I.E.L.D.",
+        "edition": "Captain America, 75th Anniversary",
+        "teams": [ "S.H.I.E.L.D." ],
+        "classes": [ "Covert","Instinct","Strength","Tech" ]
+    },
+    { // Winter Soldier
+        "name": "Winter Soldier",
+        "edition": "Captain America, 75th Anniversary",
+        "teams": [ "S.H.I.E.L.D." ],
+        "classes": [ "Covert","Instinct","Strength","Tech" ]
+    },
+    { // Agent X-13
+        "name": "Agent X-13",
+        "edition": "Captain America, 75th Anniversary",
+        "teams": [ "S.H.I.E.L.D." ],
+        "classes": [ "Covert","Instinct","Ranged","Tech" ]
+    },
+    { // Captain America 1941
+        "name": "Captain America 1941",
+        "edition": "Captain America, 75th Anniversary",
+        "teams": [ "Avengers" ],
+        "classes": [ "Covert","Instinct","Strength","Tech" ]
+    },
+    { // Thanos (Hero)
+        "name": "Thanos (Hero)",
+        "edition": "Secret Wars Volume 1",
+        "teams": [ "Cabal" ],
+        "classes": [ "Ranged","Strength" ]
+    },
+    { // Superior Iron Man
+        "name": "Superior Iron Man",
+        "edition": "Secret Wars Volume 1",
+        "teams": [ "Illuminati" ],
+        "classes": [ "Ranged","Tech" ]
+    },
+    { // Ultimate Spider-Man
+        "name": "Ultimate Spider-Man",
+        "edition": "Secret Wars Volume 1",
+        "teams": [ "Spider Friends" ],
+        "classes": [ "Covert","Instinct","Sstrength","Tech" ]
+    },
+    { // Captain Marvel
+        "name": "Captain Marvel",
+        "edition": "Secret Wars Volume 1",
+        "teams": [ "Avengers" ],
+        "classes": [ "Ranged","Strength" ]
+    },
+    { // Apocalyptic Kitty Pryde
+        "name": "Apocalyptic Kitty Pryde",
+        "edition": "Secret Wars Volume 1",
+        "teams": [ "X-Men" ],
+        "classes": [ "Covert","Strength" ]
+    },
+    { // Black Panther
+        "name": "Black Panther",
+        "edition": "Secret Wars Volume 1",
+        "teams": [ "Illuminati" ],
+        "classes": [ "Covert","Instinct","Strength","Tech" ]
+    },
+    { // Jean Grey
+        "name": "Jean Grey",
+        "edition": "Dark City",
+        "teams": [ "X-Men" ],
+        "classes": [ "Covert", "Ranged" ]
+    },
+    { // Black Bolt
+        "name": "Black Bolt",
+        "edition": "Secret Wars Volume 1",
+        "teams": [ "Illuminati" ],
+        "classes": [ "Covert","Ranged","Strength" ]
+    },
+    { // Proxima Midnight
+        "name": "Proxima Midnight",
+        "edition": "Secret Wars Volume 1",
+        "teams": [ "Cabal" ],
+        "classes": [ "Covert","Instinct" ]
+    },
+    { // Old Man Logan
+        "name": "Old Man Logan",
+        "edition": "Secret Wars Volume 1",
+        "teams": [ "X-Men" ],
+        "classes": [ "Covert","Instinct" ]
+    },
+    { // Namor, The Sub-Mariner
+        "name": "Namor, The Sub-Mariner",
+        "edition": "Secret Wars Volume 1",
+        "teams": [ "Cabal" ],
+        "classes": [ "Instinct","Strength" ]
+    },
+    { // Lady Thor
+        "name": "Lady Thor",
+        "edition": "Secret Wars Volume 1",
+        "teams": [ "Avengers" ],
+        "classes": [ "Ranged","Strength" ]
+    },
+    { // Magik
+        "name": "Magik",
+        "edition": "Secret Wars Volume 1",
+        "teams": [ "X-Men" ],
+        "classes": [ "Covert","Ranged" ]
+    },
+    { // Maximus
+        "name": "Maximus",
+        "edition": "Secret Wars Volume 1",
+        "teams": [ "Cabal" ],
+        "classes": [ "Covert","Tech" ]
+    },
+    { // Dr. Strange
+        "name": "Dr. Strange",
+        "edition": "Secret Wars Volume 1",
+        "teams": [ "Illuminati" ],
+        "classes": [ "Covert","Instinct","Ranged" ]
+    },
+    { // Silk
+        "name": "Silk",
+        "edition": "Secret Wars Volume 2",
+        "teams": [ "Spider Friends" ],
+        "classes": [ "Covert","Instinct","Ranged","Strength","Tech" ]
+    },
+    { // Time-Traveling Jean Grey
+        "name": "Time-Traveling Jean Grey",
+        "edition": "Secret Wars Volume 2",
+        "teams": [ "X-Men" ],
+        "classes": [ "Covert","Instinct","Ranged" ]
+    },
+    { // Agent Venom
+        "name": "Agent Venom",
+        "edition": "Secret Wars Volume 2",
+        "teams": [ "Spider Friends" ],
+        "classes": [ "Strength","Instinct","Tech" ]
+    },
+    { // Beast
+        "name": "Beast",
+        "edition": "Secret Wars Volume 2",
+        "teams": [ "Illuminati" ],
+        "classes": [ "Strength","Tech" ]
+    },
+    { // Arkon the Magnificent
+        "name": "Arkon the Magnificent",
+        "edition": "Secret Wars Volume 2",
+        "teams": [ "None" ],
+        "classes": [ "Covert","Instinct","Ranged","Strength" ]
+    },
+    { // Black Swan
+        "name": "Black Swan",
+        "edition": "Secret Wars Volume 2",
+        "teams": [ "Cabal" ],
+        "classes": [ "Covert","Instinct","Ranged" ]
+    },
+    { // The Captain and the Devil
+        "name": "The Captain and the Devil",
+        "edition": "Secret Wars Volume 2",
+        "teams": [ "Avengers" ],
+        "classes": [ "Covert","Instinct","Ranged","Strength","Tech" ]
+    },
+    { // Captain Britain
+        "name": "Captain Britain",
+        "edition": "Secret Wars Volume 2",
+        "teams": [ "Illuminati" ],
+        "classes": [ "Covert","Strength" ]
+    },
+    { // Spider-Gwen
+        "name": "Spider-Gwen",
+        "edition": "Secret Wars Volume 2",
+        "teams": [ "Spider Friends" ],
+        "classes": [ "Covert","Instinct","Strength","Tech" ]
+    },
+    { // Phoenix-Force Cyclops
+        "name": "Phoenix-Force Cyclops",
+        "edition": "Secret Wars Volume 2",
+        "teams": [ "X-Men" ],
+        "classes": [ "Covert","Instinct","Ranged" ]
+    },
+    { // Ruby Summers
+        "name": "Ruby Summers",
+        "edition": "Secret Wars Volume 2",
+        "teams": [ "X-Men" ],
+        "classes": [ "Ranged","Strength" ]
+    },
+    { // Shang-Chi
+        "name": "Shang-Chi",
+        "edition": "Secret Wars Volume 2",
+        "teams": [ "Marvel Knights" ],
+        "classes": [ "Covert","Instinct" ]
+    },
+    { // Soulsword Colossus
+        "name": "Soulsword Colossus",
+        "edition": "Secret Wars Volume 2",
+        "teams": [ "X-Men" ],
+        "classes": [ "Covert","Instinct","Strength" ]
+    },
+    { // Elsa Bloodstone
+        "name": "Elsa Bloodstone",
+        "edition": "Secret Wars Volume 2",
+        "teams": [ "S.H.I.E.L.D." ],
+        "classes": [ "Covert","Instinct","Ranged","Strength","Tech" ]
+    },
+    { // Dr. Punisher the Soldier Supreme
+        "name": "Dr. Punisher the Soldier Supreme",
+        "edition": "Secret Wars Volume 2",
+        "teams": [ "Marvel Knights" ],
+        "classes": [ "Ranged","Tech" ]
+    },
+    { // Corvus Glaive
+        "name": "Corvus Glaive",
+        "edition": "Secret Wars Volume 2",
+        "teams": [ "Cabal" ],
+        "classes": [ "Instinct","Strength","Tech" ]
+    }
+]
