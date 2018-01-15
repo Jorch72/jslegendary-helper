@@ -8,6 +8,8 @@
         "ng-build.prod": "cd Angular && ng build --prod && xcopy .\\dist\\*.* .\\..\\Gateway\\Gateway\\wwwroot /i /y",
         "ng-test": "cd Angular && ng test",
         "ng-lint": "cd Angular && ng lint",
-        "ng-e2e": "cd Angular && ng e2e"
+        "ng-e2e": "cd Angular && ng e2e",
+        "publish": "cd Gateway\\Gateway && dotnet publish",
+        "push": "cd Gateway\\Gateway && cf push"
     }
 }

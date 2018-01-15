@@ -50,16 +50,25 @@ namespace Gateway
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
+            app.UseDefaultFiles();
+            app.UseStaticFiles();
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseMvc();
             app.UseSwagger();
             app.UseSwaggerUI(s =>
             {
                 s.SwaggerEndpoint("v1/swagger.json", "Gateway");
+            });
+
+            app.UseMvc(routes =>
+            {
+                routes.MapSpaFallbackRoute(
+                    name: "spa-fallback",
+                    defaults: new { controller = "Fallback", action = "Index" });
             });
         }
     }
