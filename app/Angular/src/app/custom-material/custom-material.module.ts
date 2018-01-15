@@ -5,7 +5,10 @@ import {
   MatCardModule,
   MatFormFieldModule,
   MatSelectModule,
-  MatOptionModule
+  MatOptionModule,
+  MatProgressSpinnerModule,
+  MatListModule,
+  MatToolbarModule
 } from '@angular/material';
 
 @NgModule({
@@ -15,7 +18,10 @@ import {
     MatCardModule,
     MatFormFieldModule,
     MatSelectModule,
-    MatOptionModule
+    MatOptionModule,
+    MatProgressSpinnerModule,
+    MatListModule,
+    MatToolbarModule
   ],
   exports: [
     MatButtonModule,
@@ -23,7 +29,10 @@ import {
     MatCardModule,
     MatFormFieldModule,
     MatSelectModule,
-    MatOptionModule
+    MatOptionModule,
+    MatProgressSpinnerModule,
+    MatListModule,
+    MatToolbarModule
   ]
 })
 export class CustomMaterialModule { }

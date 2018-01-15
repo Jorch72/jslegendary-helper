@@ -27,6 +27,9 @@ namespace Gateway
             services.AddSingleton<EditionHttpClient, EditionHttpClient>();
             services.AddTransient<IEditionDAO, EditionDAO>();
             services.AddTransient<IEditionBLC, EditionBLC>();
+
+            services.AddSingleton<FilterHttpClient, FilterHttpClient>();
+            services.AddTransient<IFilterDAO, FilterDAO>();
             
             services.AddSingleton<VillainDeckHttpClient, VillainDeckHttpClient>();
             services.AddTransient<IVillainDeckDAO, VillainDeckDAO>();

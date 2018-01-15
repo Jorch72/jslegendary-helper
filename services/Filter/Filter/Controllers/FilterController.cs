@@ -5,28 +5,29 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Gateway
+namespace Filter
 {
     [Route("api/[controller]")]
-    public class VillainDeckController : Controller
+    public class FilterController : Controller
     {
-        private IVillainDeckBLC _blc;
+        private IFilterBLC _blc;
 
-        public VillainDeckController(IVillainDeckBLC blc)
+        public FilterController(IFilterBLC blc)
         {
             _blc = blc;
         }
 
         // POST api/values
         [HttpPost]
-        public async Task<VillainDeck> Post([FromBody]UserFilter userFilter)
+        public Filter Post([FromBody] UserFilter userFilter)
         {
             try
             {
-                return await _blc.GetVillainDeck(userFilter);
+                return _blc.GetFilter(userFilter);
             }
             catch(Exception ex)
             {
+                Console.WriteLine(ex.Message);
                 throw new HttpRequestException(ex.Message);
             }
         }

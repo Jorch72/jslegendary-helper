@@ -11,4 +11,5 @@ import { EditionService } from '../services/edition.service';
 export class EditionComponent  {
 
   constructor(public svc: EditionService) { }
+
 }

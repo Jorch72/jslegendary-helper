@@ -13,7 +13,6 @@ export class VillainComponent implements OnInit {
 
   ngOnInit() {
     this.svc.getVillainDeck();
-    console.log(this.svc.villainDeck);
   }
 
 }

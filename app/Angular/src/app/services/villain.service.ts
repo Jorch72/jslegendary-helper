@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
-import { FilterModel } from '../models/filter.model';
+import { UserFilterModel } from '../models/user.filter.model';
 import { VillainDeckModel } from '../models/villain.deck.model';
 
 import { PlayerService } from './player.service';
@@ -16,21 +16,25 @@ export class VillainService {
         private editionSvc: EditionService) { }
 
     getVillainDeck() {
+        this.villainDeck = null;
+
         let editions: string[] = [];
-        this.editionSvc.editions.forEach(edition => {
-            editions.push(edition.name);
-        });
 
-        let filter = <FilterModel>{
-            players: this.playerSvc.players,
-            editions: editions
-        };
-
-        this.http.post<VillainDeckModel>('/api/VillainDeck', filter)
-            .subscribe(data => {
-                this.villainDeck = data;
-                console.log('DATA');
-                console.log(data);
+        if(this.editionSvc.editions !== null) {
+            this.editionSvc.editions.forEach(edition => {
+                if (edition.checked) 
+                    editions.push(edition.name);
             });
+
+            let userFilter = <UserFilterModel>{
+                players: this.playerSvc.players,
+                editions: editions
+            };
+
+            this.http.post<VillainDeckModel>('/api/VillainDeck', userFilter)
+                .subscribe(data => {
+                    this.villainDeck = data;
+                });
+        }
     }
 }

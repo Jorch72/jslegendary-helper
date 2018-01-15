@@ -4,6 +4,6 @@ namespace Gateway
 {
     public interface IVillainDeckBLC
     {
-        Task<VillainDeck> GetVillainDeck(Filter filter);
+        Task<VillainDeck> GetVillainDeck(UserFilter userFilter);
     }
 }

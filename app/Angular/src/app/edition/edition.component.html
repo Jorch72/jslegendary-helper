@@ -2,8 +2,18 @@
 
   <h2>Editions</h2>
 
-  <div *ngFor="let edition of svc.editions">
-    <mat-checkbox class="box" [(ngModel)]="edition.checked">{{edition.name}}</mat-checkbox>
+  <div *ngIf="svc.editions === null">
+    <mat-spinner class="loading"></mat-spinner>
+  </div>
+
+  <div *ngIf="svc.editions !== null">
+    <div class="button-row">
+      <button mat-button (click)="svc.selectAll()">Select All</button>
+      <button mat-button (click)="svc.clearAll()">Clear All</button>
+    </div>
+    <div *ngFor="let edition of svc.editions">
+      <mat-checkbox class="box" [(ngModel)]="edition.checked">{{edition.name}}</mat-checkbox>
+    </div>
   </div>
 
   <div class="button-row">

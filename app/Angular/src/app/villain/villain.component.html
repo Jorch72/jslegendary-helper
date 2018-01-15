@@ -1,6 +1,35 @@
-<p>
-  villain works!
-</p>
+<mat-card class="card-container">
 
-<div class="test">Test color...</div>
-<mat-checkbox class="test">Click me!</mat-checkbox>
+  <h2>Villain Deck</h2>
+
+  <div *ngIf="svc.villainDeck === null">
+    <mat-spinner class="loading"></mat-spinner>
+  </div>
+
+  <div *ngIf="svc.villainDeck !== null">
+    <mat-list>
+      <h3 mat-subheader>Scheme</h3>
+      <mat-list-item>{{ svc.villainDeck.scheme.name }}</mat-list-item>
+
+      <mat-divider></mat-divider>
+
+      <h3 mat-subheader>Mastermind(s)</h3>
+      <mat-list-item *ngFor="let mm of svc.villainDeck.masterminds">{{ mm.name }}</mat-list-item>
+
+      <mat-divider></mat-divider>
+
+      <h3 mat-subheader>Villains</h3>
+      <mat-list-item *ngFor="let v of svc.villainDeck.villains">{{ v.name }}</mat-list-item>
+
+      <mat-divider></mat-divider>
+      <h3 mat-subheader>Henchmen</h3>
+      <mat-list-item *ngFor="let h of svc.villainDeck.henchmen">{{ h.name }}</mat-list-item>
+    </mat-list>
+  </div>
+
+  <div class="button-row">
+    <button mat-raised-button color="basic" [routerLink]="['/edition']">Back</button>
+    <button mat-raised-button color="primary" [routerLink]="['/villain']">Next</button>
+  </div>
+
+</mat-card>

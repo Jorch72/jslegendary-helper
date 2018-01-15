@@ -1,4 +1,19 @@
+.banner {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
 .header {
+    width: 100%;
+    font-family: Roboto,"Helvetica Neue",sans-serif;
+    font-weight: bold;
+    font-size: 1.2em;
     text-align: center;
-    margin: 0 auto;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    display: inline;
 }

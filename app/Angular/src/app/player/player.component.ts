@@ -11,6 +11,6 @@ export class PlayerComponent {
   totalPlayers: number[];
 
   constructor(public svc: PlayerService) {
-    this.totalPlayers = [ 2, 3, 4, 5, 6 ];
+    this.totalPlayers = [ 2, 3, 4, 5 ];
   }
 }
