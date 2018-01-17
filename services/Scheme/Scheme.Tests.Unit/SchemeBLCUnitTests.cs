@@ -8,97 +8,80 @@ namespace Scheme
 {
     public class SchemeBLCUnitTests
     {
-        private const string NEW = "new";
-        private const string EXISTING = "existing";
+        private Mock<ISchemeDAO> _mockDAO;
         private SchemeBLC _blc;
 
         public SchemeBLCUnitTests()
         {
-            var daoMock = new Mock<ISchemeDAO>();
-            daoMock.Setup(d => d.GetSchemes())
-                .Returns(new List<Scheme>
-                {
-                    new Scheme(),
-                    new Scheme()
-                });
-
-            daoMock.Setup(d => d.GetScheme(It.IsAny<string>()))
-                .Returns((string name) => 
-                {
-                    if(name == NEW)
-                        return null;
-                    else
-                        return new Scheme 
-                            {  
-                                Name = name,
-                                Edition = "oldEdition"
-                            };
-                });
-
-            daoMock.Setup(d => d.InsertScheme(It.IsAny<Scheme>()))
-                .Returns((Scheme Scheme) => Scheme);
-
-            daoMock.Setup(d => d.UpdateScheme(It.IsAny<Scheme>()))
-                .Returns((Scheme Scheme) => Scheme);
-
-            _blc = new SchemeBLC(daoMock.Object);
+            _mockDAO = new Mock<ISchemeDAO>();
+            _blc = new SchemeBLC(_mockDAO.Object);
         }
 
         [Fact]
         public void GetSchemes_ReturnsSchemes()
         {
+            _mockDAO.Setup(m => m.GetSchemes()).Returns(new List<Scheme>());
+
             var result = _blc.GetSchemes();
 
-            Assert.True(result.Count > 1);
+            Assert.NotNull(result);
         }
 
         [Fact]
         public void GetScheme_ValidName_ReturnsScheme()
         {
-            var result = _blc.GetScheme(EXISTING);
+            var scheme = new Scheme();
+            _mockDAO.Setup(m => m.GetScheme(It.IsAny<string>())).Returns(scheme);
 
-            Assert.Equal(EXISTING, result.Name);
+            var result = _blc.GetScheme("test");
+
+            Assert.Equal(scheme, result);
         }
 
         [Fact]
         public void PostScheme_ExistingScheme_UpdatesScheme()
         {
-            var Scheme = new Scheme
-            {
-                Name = EXISTING,
-                Edition = "newEdition"
-            };
+            var scheme = new Scheme();
+            _mockDAO.Setup(m => m.GetScheme(It.IsAny<string>())).Returns(scheme);
 
-            var result = _blc.PostScheme(Scheme);
+            var result = _blc.PostScheme(scheme);
 
-            Assert.Equal(Scheme.Edition, result.Edition);
+            _mockDAO.Verify(m => m.UpdateScheme(scheme));
         }
 
         [Fact]
         public void PostScheme_NewScheme_InsertsScheme()
         {
-            var Scheme = new Scheme
-            {
-                Name = NEW
-            };
+            var scheme = new Scheme();
+            _mockDAO.Setup(m => m.GetScheme(It.IsAny<string>())).Returns((Scheme)null);
 
-            var result = _blc.PostScheme(Scheme);
+            var result = _blc.PostScheme(scheme);
 
-            Assert.Equal(Scheme.Name, result.Name);
+            _mockDAO.Verify(m => m.InsertScheme(scheme));
         }
 
         [Fact]
-        public void PostSchemes_NewAndExistingSchemes_InsertsAndUpdatesSchemes()
+        public void PostSchemes_ExistingScheme_UpdatesScheme()
         {
-            var Schemes = new List<Scheme>
-            {
-                new Scheme { Name = NEW, Edition = "Core" },
-                new Scheme { Name = EXISTING, Edition = "Core" }
-            };
+            var scheme = new Scheme();
+            var schemes = new List<Scheme> { scheme };
+            _mockDAO.Setup(m => m.GetScheme(It.IsAny<string>())).Returns(scheme);
 
-            var result = _blc.PostSchemes(Schemes);
+            var result = _blc.PostSchemes(schemes);
 
-            Assert.True(result.All(m => Schemes.Any(mm => mm.Name == m.Name)));
+            _mockDAO.Verify(m => m.UpdateScheme(scheme));
+        }
+
+        [Fact]
+        public void PostSchemes_NewScheme_InsertsScheme()
+        {
+            var scheme = new Scheme();
+            var schemes = new List<Scheme> { scheme };
+            _mockDAO.Setup(m => m.GetScheme(It.IsAny<string>())).Returns((Scheme)null);
+
+            var result = _blc.PostSchemes(schemes);
+
+            _mockDAO.Verify(m => m.InsertScheme(scheme));
         }
     }
 }
