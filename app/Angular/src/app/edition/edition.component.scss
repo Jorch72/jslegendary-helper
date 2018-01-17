@@ -3,5 +3,10 @@ h2 {
 }
 
 .box {
-    padding-left: 100px;
+    padding-left: 15px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
 }

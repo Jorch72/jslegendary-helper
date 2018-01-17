@@ -11,7 +11,7 @@
       <button mat-button (click)="svc.selectAll()">Select All</button>
       <button mat-button (click)="svc.clearAll()">Clear All</button>
     </div>
-    <div *ngFor="let edition of svc.editions">
+    <div class="flex" *ngFor="let edition of svc.editions">
       <mat-checkbox class="box" [(ngModel)]="edition.checked">{{edition.name}}</mat-checkbox>
     </div>
   </div>
