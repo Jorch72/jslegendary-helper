@@ -8,6 +8,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using MongoDB.Driver;
 using Swashbuckle.AspNetCore.Swagger;
 
 namespace Filter
@@ -24,6 +25,8 @@ namespace Filter
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddTransient<IMongoClient>(provider => GetMongoClient());
+            services.AddTransient<IFilterDAO, FilterDAO>();
             services.AddTransient<IFilterBLC, FilterBLC>();
             
             services.AddMvc();
@@ -52,6 +55,16 @@ namespace Filter
             {
                 s.SwaggerEndpoint("v1/swagger.json", "Filter");
             });
+        }
+
+        public MongoClient GetMongoClient()
+        {
+            var user = "admin";
+            var password = "password";
+            var name = "CloudFoundry_oumhg86d_nq48b1sc";
+            var connection = $"mongodb://{user}:{password}@ds121896.mlab.com:21896/{name}";
+            
+            return new MongoClient(connection);
         }
     }
 }

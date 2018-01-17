@@ -10,6 +10,9 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.3" />
+    <PackageReference Include="MongoDB.Driver" version="2.4.4" />
+    <PackageReference Include="MongoDB.Driver.Core" version="2.4.4" />
+    <PackageReference Include="MongoDB.Bson" version="2.4.4" />
     <PackageReference Include="Swashbuckle.AspNetCore" version="1.0.0" />
   </ItemGroup>
 
