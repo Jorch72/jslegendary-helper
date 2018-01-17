@@ -20,6 +20,10 @@ namespace Filter
         
         [BsonElement("henchmen")]
         public int MaxHenchmen { get; set; }
+
+        [BsonElement("heroes")]
+        public int MaxHeroes { get; set; }
+
         public List<string> Editions { get; set; }
     }
 }

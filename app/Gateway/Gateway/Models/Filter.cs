@@ -8,6 +8,7 @@ namespace Gateway
         public int MaxMasterminds { get; set; }
         public int MaxVillains { get; set; }
         public int MaxHenchmen { get; set; }
+        public int MaxHeroes { get; set; }
         public List<string> Editions { get; set; }
     }
 }
