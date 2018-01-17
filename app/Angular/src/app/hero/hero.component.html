@@ -1,0 +1,18 @@
+<mat-card class="card-container">
+
+  <h2>Hero Deck</h2>
+
+  <div *ngIf="svc.heroDeck === null">
+    <mat-spinner class="loading"></mat-spinner>
+  </div>
+
+  <div *ngIf="svc.heroDeck !== null">
+    <mat-list>
+        <mat-list-item *ngFor="let h of svc.heroDeck">{{ h.name }}</mat-list-item>
+    </mat-list>
+  </div>
+
+  <div class="button-row">
+    <button mat-raised-button color="basic" [routerLink]="['/villain']">Back</button>
+  </div>
+</mat-card>

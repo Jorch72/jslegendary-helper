@@ -11,10 +11,12 @@ import { AppComponent } from './app.component';
 import { PlayerComponent } from './player/player.component';
 import { EditionComponent } from './edition/edition.component';
 import { VillainComponent } from './villain/villain.component';
+import { HeroComponent } from './hero/hero.component';
 
 import { PlayerService } from './services/player.service';
 import { EditionService } from './services/edition.service';
 import { VillainService } from './services/villain.service';
+import { HeroService } from './services/hero.service';
 
 
 @NgModule({
@@ -22,7 +24,8 @@ import { VillainService } from './services/villain.service';
     AppComponent,
     PlayerComponent,
     VillainComponent,
-    EditionComponent
+    EditionComponent,
+    HeroComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +38,8 @@ import { VillainService } from './services/villain.service';
   providers: [
     PlayerService,
     EditionService,
-    VillainService
+    VillainService,
+    HeroService
   ],
   bootstrap: [AppComponent]
 })

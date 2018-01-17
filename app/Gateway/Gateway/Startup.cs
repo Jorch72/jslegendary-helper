@@ -34,6 +34,10 @@ namespace Gateway
             services.AddSingleton<VillainDeckHttpClient, VillainDeckHttpClient>();
             services.AddTransient<IVillainDeckDAO, VillainDeckDAO>();
             services.AddTransient<IVillainDeckBLC, VillainDeckBLC>();
+            
+            services.AddSingleton<HeroDeckHttpClient, HeroDeckHttpClient>();
+            services.AddTransient<IHeroDeckDAO, HeroDeckDAO>();
+            services.AddTransient<IHeroDeckBLC, HeroDeckBLC>();
 
             services.AddMvc();
             services.AddSwaggerGen(s =>

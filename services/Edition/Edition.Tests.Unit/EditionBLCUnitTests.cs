@@ -8,98 +8,79 @@ namespace Edition
 {
     public class EditionBLCUnitTests
     {
-        private const string NEW = "new";
-        private const string EXISTING = "existing";
+        private Mock<IEditionDAO> _mockDAO;
         private EditionBLC _blc;
 
         public EditionBLCUnitTests()
         {
-            var daoMock = new Mock<IEditionDAO>();
-            daoMock.Setup(d => d.GetEditions())
-                .Returns(new List<Edition>
-                {
-                    new Edition(),
-                    new Edition()
-                });
-
-            daoMock.Setup(d => d.GetEdition(It.IsAny<string>()))
-                .Returns((string editionName) => 
-                {
-                    if(editionName == NEW)
-                        return null;
-                    else
-                        return new Edition 
-                            {  
-                                Id = 1,
-                                Name = EXISTING
-                            };
-                });
-
-            daoMock.Setup(d => d.InsertEdition(It.IsAny<Edition>()))
-                .Returns((Edition edition) => edition);
-
-            daoMock.Setup(d => d.UpdateEdition(It.IsAny<Edition>()))
-                .Returns((Edition edition) => edition);
-
-            _blc = new EditionBLC(daoMock.Object);
+            _mockDAO = new Mock<IEditionDAO>();
+            _blc = new EditionBLC(_mockDAO.Object);
         }
 
         [Fact]
         public void GetEditions_ReturnsEditions()
         {
+            _mockDAO.Setup(m => m.GetEditions()).Returns(new List<Edition>());
+
             var result = _blc.GetEditions();
 
-            Assert.True(result.Count > 1);
+            Assert.NotNull(result);
         }
 
         [Fact]
         public void GetEdition_ValidName_ReturnsEdition()
         {
-            var result = _blc.GetEdition(EXISTING);
+            _mockDAO.Setup(m => m.GetEdition(It.IsAny<string>())).Returns(new Edition());
 
-            Assert.Equal(EXISTING, result.Name);
+            var result = _blc.GetEdition("test");
+
+            Assert.NotNull(result);
         }
 
         [Fact]
         public void PostEdition_ExistingEdition_UpdatesEdition()
         {
-            var edition = new Edition
-            {
-                Id = 1,
-                Name = EXISTING
-            };
+            var edition = new Edition();
+            _mockDAO.Setup(m => m.GetEdition(It.IsAny<string>())).Returns(edition);
 
             var result = _blc.PostEdition(edition);
 
-            Assert.Equal(edition.Name, result.Name);
+            _mockDAO.Verify(m => m.UpdateEdition(edition));
         }
 
         [Fact]
         public void PostEdition_NewEdition_InsertsEdition()
         {
-            var edition = new Edition
-            {
-                Id = 5,
-                Name = NEW
-            };
+            _mockDAO.Setup(m => m.GetEdition(It.IsAny<string>())).Returns((Edition)null);
+            var edition = new Edition();
 
             var result = _blc.PostEdition(edition);
 
-            Assert.Equal(edition.Name, result.Name);
+            _mockDAO.Verify(m => m.InsertEdition(edition));
         }
 
         [Fact]
-        public void PostEditions_NewAndExistingEditions_InsertsAndUpdatesEditions()
+        public void PostEditions_ExistingEditions_UpdatesEditions()
         {
-            var editions = new List<Edition>
-            {
-                new Edition { Id = 1, Name = EXISTING },
-                new Edition { Id = 10, Name = NEW }
-            };
+            var edition = new Edition();
+            var editions = new List<Edition> { edition };
+            _mockDAO.Setup(m => m.GetEdition(It.IsAny<string>())).Returns(edition);
 
             var result = _blc.PostEditions(editions);
 
-            Assert.True(result.All(m => editions.Any(mm => mm.Name == m.Name)));
+            _mockDAO.Verify(m => m.UpdateEdition(edition));
+        }
+
+        [Fact]
+        public void PostEditions_NewEditions_InsertEditions()
+        {
+            _mockDAO.Setup(m => m.GetEdition(It.IsAny<string>())).Returns((Edition)null);
+            var edition = new Edition();
+            var editions = new List<Edition> { edition };
+
+            var result = _blc.PostEditions(editions);
+
+            _mockDAO.Verify(m => m.InsertEdition(edition));
         }
     }
 }
