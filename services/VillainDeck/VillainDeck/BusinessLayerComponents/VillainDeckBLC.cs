@@ -84,6 +84,10 @@ namespace VillainDeck
                 filter.MaxMasterminds = setupRule.Masterminds.Value;
             if(setupRule.Villains != null)
                 filter.MaxVillains = setupRule.Villains.Value;
+            if(setupRule.Henchmen != null)
+                filter.MaxHenchmen = setupRule.Henchmen.Value;
+            if(setupRule.Heroes != null)
+                filter.MaxHeroes = setupRule.Heroes.Value;
 
             return filter;
         }
