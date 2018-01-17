@@ -1,7 +1,7 @@
 using System;
 using Xunit;
 
-namespace Filter.Tests.Unit
+namespace Filter.Tests.Integration
 {
     public class UnitTest1
     {
