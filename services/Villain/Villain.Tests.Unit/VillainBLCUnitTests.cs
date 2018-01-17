@@ -8,97 +8,80 @@ namespace Villain
 {
     public class VillainBLCUnitTests
     {
-        private const string NEW = "new";
-        private const string EXISTING = "existing";
+        private Mock<IVillainDAO> _mockDAO;
         private VillainBLC _blc;
 
         public VillainBLCUnitTests()
         {
-            var daoMock = new Mock<IVillainDAO>();
-            daoMock.Setup(d => d.GetVillains())
-                .Returns(new List<Villain>
-                {
-                    new Villain(),
-                    new Villain()
-                });
-
-            daoMock.Setup(d => d.GetVillain(It.IsAny<string>()))
-                .Returns((string name) => 
-                {
-                    if(name == NEW)
-                        return null;
-                    else
-                        return new Villain 
-                            {  
-                                Name = name,
-                                Edition = "oldEdition"
-                            };
-                });
-
-            daoMock.Setup(d => d.InsertVillain(It.IsAny<Villain>()))
-                .Returns((Villain villain) => villain);
-
-            daoMock.Setup(d => d.UpdateVillain(It.IsAny<Villain>()))
-                .Returns((Villain villain) => villain);
-
-            _blc = new VillainBLC(daoMock.Object);
+            _mockDAO = new Mock<IVillainDAO>();
+            _blc = new VillainBLC(_mockDAO.Object);
         }
 
         [Fact]
         public void GetVillains_ReturnsVillains()
         {
+            _mockDAO.Setup(m => m.GetVillains()).Returns(new List<Villain>());
+
             var result = _blc.GetVillains();
 
-            Assert.True(result.Count > 1);
+            Assert.NotNull(result);
         }
 
         [Fact]
         public void GetVillain_ValidName_ReturnsVillain()
         {
-            var result = _blc.GetVillain(EXISTING);
+            var villain = new Villain();
+            _mockDAO.Setup(m => m.GetVillain(It.IsAny<string>())).Returns(villain);
 
-            Assert.Equal(EXISTING, result.Name);
+            var result = _blc.GetVillain("test");
+
+            Assert.Equal(villain, result);
         }
 
         [Fact]
         public void PostVillain_ExistingVillain_UpdatesVillain()
         {
-            var villain = new Villain
-            {
-                Name = EXISTING,
-                Edition = "newEdition"
-            };
+            var villain = new Villain();
+            _mockDAO.Setup(m => m.GetVillain(It.IsAny<string>())).Returns(villain);
 
             var result = _blc.PostVillain(villain);
 
-            Assert.Equal(villain.Edition, result.Edition);
+            _mockDAO.Verify(m => m.UpdateVillain(villain));
         }
 
         [Fact]
         public void PostVillain_NewVillain_InsertsVillain()
         {
-            var villain = new Villain
-            {
-                Name = NEW
-            };
+            var villain = new Villain();
+            _mockDAO.Setup(m => m.GetVillain(It.IsAny<string>())).Returns((Villain)null);
 
             var result = _blc.PostVillain(villain);
 
-            Assert.Equal(villain.Name, result.Name);
+            _mockDAO.Verify(m => m.InsertVillain(villain));
         }
 
         [Fact]
-        public void PostVillains_NewAndExistingVillains_InsertsAndUpdatesVillains()
+        public void PostVillains_NewVillain_InsertsVillain()
         {
-            var villains = new List<Villain>
-            {
-                new Villain { Name = NEW, Edition = "Core" },
-                new Villain { Name = EXISTING, Edition = "Core" }
-            };
+            var villain = new Villain();
+            var villains = new List<Villain> { villain };
+            _mockDAO.Setup(m => m.GetVillain(It.IsAny<string>())).Returns((Villain)null);
 
             var result = _blc.PostVillains(villains);
 
-            Assert.True(result.All(m => villains.Any(mm => mm.Name == m.Name)));
+            _mockDAO.Verify(m => m.InsertVillain(villain));
+        }
+
+        [Fact]
+        public void PostVillains_ExistingVillain_UpdatesVillain()
+        {
+            var villain = new Villain();
+            var villains = new List<Villain> { villain };
+            _mockDAO.Setup(m => m.GetVillain(It.IsAny<string>())).Returns(villain);
+
+            var result = _blc.PostVillains(villains);
+
+            _mockDAO.Verify(m => m.UpdateVillain(villain));
         }
     }
 }
