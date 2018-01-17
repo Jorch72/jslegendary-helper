@@ -8,97 +8,80 @@ namespace Mastermind
 {
     public class MastermindBLCUnitTests
     {
-        private const string NEW = "new";
-        private const string EXISTING = "existing";
+        private Mock<IMastermindDAO> _mockDAO;
         private MastermindBLC _blc;
 
         public MastermindBLCUnitTests()
         {
-            var daoMock = new Mock<IMastermindDAO>();
-            daoMock.Setup(d => d.GetMasterminds())
-                .Returns(new List<Mastermind> 
-                {
-                    new Mastermind(),
-                    new Mastermind()
-                });
-
-            daoMock.Setup(d => d.GetMastermind(It.IsAny<string>()))
-                .Returns((string name) => 
-                {
-                    if(name == NEW)
-                        return null;
-                    else
-                        return new Mastermind 
-                            {  
-                                Name = name,
-                                Edition = "oldEdition"
-                            };
-                });
-
-            daoMock.Setup(d => d.InsertMastermind(It.IsAny<Mastermind>()))
-                .Returns((Mastermind Mastermind) => Mastermind);
-
-            daoMock.Setup(d => d.UpdateMastermind(It.IsAny<Mastermind>()))
-                .Returns((Mastermind Mastermind) => Mastermind);
-
-            _blc = new MastermindBLC(daoMock.Object);
+            _mockDAO = new Mock<IMastermindDAO>();
+            _blc = new MastermindBLC(_mockDAO.Object);
         }
 
         [Fact]
         public void GetMasterminds_ReturnsMasterminds()
         {
+            _mockDAO.Setup(m => m.GetMasterminds()).Returns(new List<Mastermind>());
+
             var result = _blc.GetMasterminds();
 
-            Assert.True(result.Count > 1);
+            Assert.NotNull(result);
         }
 
         [Fact]
         public void GetMastermind_ValidName_ReturnsMastermind()
         {
-            var result = _blc.GetMastermind(EXISTING);
+            var mastermind = new Mastermind();
+            _mockDAO.Setup(m => m.GetMastermind(It.IsAny<string>())).Returns(mastermind);
 
-            Assert.Equal(EXISTING, result.Name);
+            var result = _blc.GetMastermind("test");
+
+            Assert.Equal(mastermind, result);
         }
 
         [Fact]
         public void PostMastermind_ExistingMastermind_UpdatesMastermind()
         {
-            var mastermind = new Mastermind
-            {
-                Name = EXISTING,
-                Edition = "newEdition"
-            };
+            var mastermind = new Mastermind();
+            _mockDAO.Setup(m => m.GetMastermind(It.IsAny<string>())).Returns(mastermind);
 
             var result = _blc.PostMastermind(mastermind);
 
-            Assert.Equal(mastermind.Edition, result.Edition);
+            _mockDAO.Verify(m => m.UpdateMastermind(mastermind));
         }
 
         [Fact]
         public void PostMastermind_NewMastermind_InsertsMastermind()
         {
-            var mastermind = new Mastermind
-            {
-                Name = NEW
-            };
+            var mastermind = new Mastermind();
+            _mockDAO.Setup(m => m.GetMastermind(It.IsAny<string>())).Returns((Mastermind)null);
 
             var result = _blc.PostMastermind(mastermind);
 
-            Assert.Equal(mastermind.Name, result.Name);
+            _mockDAO.Verify(m => m.InsertMastermind(mastermind));
         }
 
         [Fact]
-        public void PostMasterminds_NewAndExistingMasterminds_InsertsAndUpdatesMasterminds()
+        public void PostMasterminds_ExistingMastermind_UpdatesMastermind()
         {
-            var masterminds = new List<Mastermind>
-            {
-                new Mastermind { Name = NEW, Edition = "Core" },
-                new Mastermind { Name = EXISTING, Edition = "Core" }
-            };
+            var mastermind = new Mastermind();
+            var masterminds = new List<Mastermind> { mastermind };
+            _mockDAO.Setup(m => m.GetMastermind(It.IsAny<string>())).Returns(mastermind);
 
             var result = _blc.PostMasterminds(masterminds);
 
-            Assert.True(result.All(m => masterminds.Any(mm => mm.Name == m.Name)));
+            _mockDAO.Verify(m => m.UpdateMastermind(mastermind));
+        }
+
+        [Fact]
+        public void PostMasterminds_NewMastermind_InsertsMastermind()
+        {
+            var mastermind = new Mastermind();
+            var masterminds = new List<Mastermind> { mastermind };
+            _mockDAO.Setup(m => m.GetMastermind(It.IsAny<string>())).Returns((Mastermind)null);
+
+            var result = _blc.PostMasterminds(masterminds);
+
+            _mockDAO.Verify(m => m.InsertMastermind(mastermind));
         }
     }
 }
