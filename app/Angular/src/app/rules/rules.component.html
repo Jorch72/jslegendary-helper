@@ -1,0 +1,9 @@
+<mat-list>
+  <div *ngFor="let rule of rules">
+      <h3 mat-subheader>{{ rule.name }}</h3>
+      <mat-list-item>
+        <p mat-line>{{ rule.description }}</p>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+  </div>
+</mat-list>

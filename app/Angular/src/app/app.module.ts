@@ -17,6 +17,7 @@ import { PlayerService } from './services/player.service';
 import { EditionService } from './services/edition.service';
 import { VillainService } from './services/villain.service';
 import { HeroService } from './services/hero.service';
+import { RulesComponent } from './rules/rules.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { HeroService } from './services/hero.service';
     PlayerComponent,
     VillainComponent,
     EditionComponent,
-    HeroComponent
+    HeroComponent,
+    RulesComponent
   ],
   imports: [
     BrowserModule,
